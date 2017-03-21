@@ -23,7 +23,6 @@
 
 <body class="fixed-sn blue-skin <?= $body ?>">
 
-
 </body>
 
 </html>

@@ -14,6 +14,7 @@ class HalamanUtama extends CI_Controller{
 
     $this->load->view('template', $data);
     $this->load->view('homePage/HalamanUtama');
+    $this->load->view('javascript');
   }
 
 }
