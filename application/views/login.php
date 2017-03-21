@@ -30,22 +30,27 @@
                 </div>
 
                 <!--Body-->
+
+                <form class="" action="<?= base_url('admin/login') ?>" method="post">
+
+
                 <div class="md-form">
                   <i class="fa fa-user prefix"></i>
-                  <input type="text" id="form3" class="form-control">
+                  <input name="username" type="text" id="form3" class="form-control">
                   <label for="form3">username</label>
                 </div>
 
                 <div class="md-form">
                   <i class="fa fa-lock prefix"></i>
-                  <input type="password" id="form4" class="form-control">
+                  <input name="password" type="password" id="form4" class="form-control">
                   <label for="form4">password</label>
                 </div>
 
                 <div class="text-xs-center">
-                  <button class="btn btn-ins btn-lg">Sign in</button>
+                  <button type="submit" class="btn btn-ins btn-lg">Sign in</button>
                 </div>
 
+              </form>
               </div>
             </div>
             <!--/.Form-->
