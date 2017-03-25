@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$data['body'] = "";
+		$data['body'] = "nope";
 		$this->load->view('template', $data);
 		$this->load->view('login');
 		$this->load->view('javascript');

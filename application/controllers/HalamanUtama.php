@@ -13,6 +13,7 @@ class HalamanUtama extends CI_Controller{
     $data['body'] = "body-normal";
 
     $this->load->view('template', $data);
+    $this->load->view('navbar');
     $this->load->view('homePage/HalamanUtama');
     $this->load->view('javascript');
   }

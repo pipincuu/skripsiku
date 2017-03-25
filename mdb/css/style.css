@@ -57,6 +57,16 @@ header,
   padding-top: 7%;
 }
 
+.thead-inverse th {
+    color: #fff;
+    background-color: #072e6e;
+}
+
+.search{
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
 @media (max-width: 992px) {
     .description {
         padding-top: 7rem;
