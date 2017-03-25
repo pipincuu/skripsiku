@@ -3,6 +3,8 @@
 <!-- JQuery -->
 <script type="text/javascript" src="<?= base_url('mdb/js/jquery-3.1.1.min.js') ?>"></script>
 
+<script type="text/javascript" src="<?= base_url('mdb/angular/angular.js') ?>"></script>
+
 <!-- Tooltips -->
 <script type="text/javascript" src="<?= base_url('mdb/js/tether.min.js') ?>"></script>
 
@@ -11,6 +13,8 @@
 
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="<?= base_url('mdb/js/mdb.js') ?>"></script>
+
+<script src="<?= base_url('mdb/js/apps.js') ?>" charset="utf-8"></script>
 
 <script>
     // SideNav init
