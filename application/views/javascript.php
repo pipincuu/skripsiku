@@ -27,6 +27,13 @@
     };
 </script>
 
+<script type="text/javascript">
+$('.rotate-btn').on('click', function () {
+	var cardId = $(this).attr('data-card');
+	$('#' + cardId).toggleClass('flipped');
+});
+</script>
+
 <script>
     new WOW().init();
 </script>
