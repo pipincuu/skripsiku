@@ -18,43 +18,23 @@
         <!-- Side navigation links -->
         <li>
             <ul class="collapsible collapsible-accordion">
-                <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-heart"></i> New Arrivals<i class="fa fa-angle-down rotate-icon"></i></a>
+                <li><a class="collapsible-header waves-effect arrow-r">
+                  <i class="fa fa-list-alt"></i> Data Tanggungan<i class="fa fa-angle-down rotate-icon"></i></a>
                     <div class="collapsible-body">
                         <ul>
-                            <li><a href="#" class="waves-effect">Handbags</a>
+                            <li><a href="#" class="waves-effect">Jurusan dan Gudang</a>
                             </li>
-                            <li><a href="#" class="waves-effect">Shoes</a>
+                            <li><a href="#" class="waves-effect">Program Studi</a>
                             </li>
-                            <li><a href="#" class="waves-effect">Dresses</a>
-                            </li>
-                            <li><a href="#" class="waves-effect">Skirts</a>
-                            </li>
-                            <li><a href="#" class="waves-effect">Jeans</a>
-                            </li>
-                            <li><a href="#" class="waves-effect">Outerwear</a>
+                            <li><a href="#" class="waves-effect">Perpustakaan</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-gitlab"></i> For kids<i class="fa fa-angle-down rotate-icon"></i></a>
-                    <div class="collapsible-body">
-                        <ul>
-                            <li><a href="#" class="waves-effect">Girls</a>
-                            </li>
-                            <li><a href="#" class="waves-effect">Boys</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-coffee "></i> Spring<i class="fa fa-angle-down rotate-icon"></i></a>
-                    <div class="collapsible-body">
-                        <ul>
-                            <li><a href="#" class="waves-effect">Denim jackets</a>
-                            </li>
-                            <li><a href="#" class="waves-effect">Sneakers</a>
-                            </li>
-                        </ul>
-                    </div>
+                <li>
+                  <a href="" class=" waves-effect arrow-r">
+                    <i class="fa fa-user-circle-o"></i> Data Admin
+                  </a>
                 </li>
             </ul>
         </li>

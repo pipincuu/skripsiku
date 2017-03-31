@@ -19,19 +19,48 @@
 				<div class="card testimonial-card">
 
 					<!--Bacground color-->
-					<div class="card-up default-color-dark">
+					<div class="card-up primary-color-dark">
 					</div>
 
 					<!--Avatar-->
-					<div class="avatar"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%288%29.jpg" class="rounded-circle img-responsive">
+					<div class="avatar"><img src="<?= base_url('mdb/img/') ?>fiqi.jpg" class="rounded-circle img-responsive">
 					</div>
 
 					<div class="card-block">
 						<!--Name-->
-						<h4 class="card-title">Anna Doe</h4>
-						<hr>
+						<h4 class="card-title"><strong>{{ mhs.NIM }}</strong></h4>
+						<p>{{ mhs.nama_mahasiswa }}</p>
 						<!--Quotation-->
-						<p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci</p>
+						<p>
+							<!-- <div class="chip white-text blue">
+								Gudang dan Jurusan 2
+							</div>
+							<div class="chip white-text green">
+								Program Studi 1
+							</div>
+							<div class="chip white-text orange">
+								Perpustakaan 1
+							</div> -->
+						</p>
+						<ul class="">
+							<li class="list-group-item">
+								<span class="tag bg-success label-pill float-xs-right">
+									<i class="fa fa-check"></i>
+								</span> Gudang & Jurusan
+							</li>
+							<li class="list-group-item">
+								<span class="tag bg-danger label-pill float-xs-right">
+									<i class="fa fa-close"></i>
+								</span> Program Studi
+							</li>
+							<li class="list-group-item">
+								<span class="tag bg-warning label-pill float-xs-right">
+									<i class="fa fa-question"></i>
+								</span> Perpustakaan
+							</li>
+						</ul>
+
+						<button type="button" class="btn btn-default" name="button">Lihat Detail</button>
 					</div>
 
 				</div>
