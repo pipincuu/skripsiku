@@ -18,7 +18,7 @@
         <!-- Side navigation links -->
         <li>
             <ul class="collapsible collapsible-accordion">
-                <li><a class="collapsible-header waves-effect arrow-r">
+                <!-- <li><a class="collapsible-header waves-effect arrow-r">
                   <i class="fa fa-list-alt"></i> Data Tanggungan<i class="fa fa-angle-down rotate-icon"></i></a>
                     <div class="collapsible-body">
                         <ul>
@@ -30,6 +30,11 @@
                             </li>
                         </ul>
                     </div>
+                </li> -->
+                <li>
+                  <a href="<?= base_url('bebas-tanggungan') ?>" class=" waves-effect arrow-r">
+                    <i class="fa fa-user-circle-o"></i> Data Bebas Tanggungan
+                  </a>
                 </li>
                 <li>
                   <a href="" class=" waves-effect arrow-r">

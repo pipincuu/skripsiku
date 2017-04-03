@@ -17,3 +17,19 @@ app.controller('mahasiswaController', function($http, $scope) {
   );
 
 });
+
+app.controller('bebasControlelr',function($http, $scope){
+
+$htpp.get("").then(
+
+  function success($data){
+    $scope.bebas = data.data;
+  },
+
+  function error($data){
+    console.log("error");
+  }
+
+);
+
+});
