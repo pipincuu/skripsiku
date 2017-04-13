@@ -1,5 +1,5 @@
 <main ng-app="apps" ng-controller="mahasiswaController">
-  <table class="table table-bordered">
+  <table id="datatable" datatable="ng" class="table table-bordered" cellspacing="0" width="100%">
       <thead class="thead-inverse">
         <tr>
           <th>#</th>

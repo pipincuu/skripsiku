@@ -16,6 +16,7 @@ class BebasTanggungan extends CI_Controller{
     $this->load->view('navbar');
     $this->load->view('bebasTanggungan/index');
     $this->load->view('javascript');
+    $this->load->view('DataTables');
   }
 
 }

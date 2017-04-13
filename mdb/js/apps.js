@@ -20,6 +20,8 @@ app.controller('mahasiswaController', function($http, $scope) {
 
 app.controller('bebasControlelr',function($http, $scope){
 
+$http.post()
+
 $htpp.get("").then(
 
   function success($data){
