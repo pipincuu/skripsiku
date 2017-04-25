@@ -46,7 +46,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand navbar-inverse navbar-brand " href="index.html"><i class="fa fa-foursquare"></i> Admin</a>
+                    <a class="navbar-brand navbar-inverse navbar-brand " href="index.html"><i class="fa fa-foursquare"></i> Kemahasiswaan </a>
                 </div>
                 <!-- Top Menu Items -->
                 <ul class="nav navbar-right top-nav">
@@ -161,7 +161,7 @@
                             <a href="charts.html"><i class="fa fa-random"></i>  </a>
                         </li> -->
                         <li>
-                            <a href="Insert"><i class="fa fa-keyboard-o"></i>
+                            <a href="Mahasiswa"><i class="fa fa-keyboard-o"></i>
                           Input Data Kemahasiswaan</a>
                         </li>
                         <li>

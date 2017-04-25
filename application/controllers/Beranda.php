@@ -5,7 +5,7 @@ class Beranda extends CI_Controller {
   public function index()
   {
     $this->load->view('navbar');
-  	$this->load->view('input');
+  	$this->load->view('home');
   }
 
 }

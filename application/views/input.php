@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Form Peminjaman Gedung dan Ruangan</title>
+	<title>Form Input Data Mahasiswa </title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>res/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>res/css/style.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>res/font-awesome/css/font-awesome.css">
@@ -21,7 +21,7 @@
 
 
 						  <div class="panel-heading">
-								<h3 class="panel-title text-center">Form Peminjaman Gedung dan Ruangan Politeknik Negeri Malang</h3>
+								<h3 class="panel-title text-center">Form Input Data Mahasiswa Tingkat Akhir Jurusan Teknologi Informasi</h3>
 						  </div>
 
 					  <div class="panel-body">
@@ -33,102 +33,21 @@
 				 			 </div> -->
 
 				 			<div class="form-group">
-    							  <label for="gedung">Gedung</label>
-  								<input type="text" name="gedung" class="form-control" id="gedung" placeholder="">
+    							  <label for="nim">Nim</label>
+  								<input type="text" name="nim" class="form-control" id="nim" placeholder="Masukkan Nim Mahasiswa">
     						</div>
 
 				  			<div class="form-group">
-				    			<label for="nama">Ruangan</label>
-				    			<input type="text" name="ruangan" class="form-control" id="ruangan" placeholder="">
+				    			<label for="nama_mahasiswa">Nama</label>
+				    			<input type="text" name="nama_mahasiswa" class="form-control" id="nama_mahasiswa" placeholder="Masukkan Nama Mahasiswa">
 				  			</div>
 
-				  			<label for="nama">Tanggal Peminjaman</label>
-				  			<div class="form-inline form-group" role="form">
-
-				  				<div class="form-group">
-				  					<select name="htanggal" class="form-control">
-				  						<option value="">-Tanggal-</option>
-				  						<?php
-				  							for($i=31;$i>=1;$i--){
-				  								echo "<option value='$i'>$i</option>";
-				  							}
-				  						?>
-				  					</select>
-				  				</div>
-
-				  				<div class="form-group">
-				  					<select name="hbulan" class="form-control">
-				  						<option value="">-Bulan-</option>
-				  						<?php
-				  							for($i=1;$i<=12;$i++){
-				  								echo "<option value='$i'>$i</option>";
-				  							}
-				  						?>
-				  					</select>
-				  				</div>
-
-				  				<div class="form-group">
-				  					<select name="htanggal" class="form-control">
-				  						<option value="">-Tahun-</option>
-				  						<?php
-				  							for($i=1960;$i<=2016;$i++){
-				  								echo "<option value='$i'>$i</option>";
-				  							}
-				  						?>
-				  					</select>
-				  				</div>
-
-				  			</div>
-
-				  			<label for="nama">Tanggal Pengembalian</label>
-				  			<div class="form-inline form-group" role="form">
 
 				  			<div class="form-group">
-				  					<select name="htanggal" class="form-control">
-				  						<option value="">-Tanggal-</option>
-				  						<?php
-				  							for($i=31;$i>=1;$i--){
-				  								echo "<option value='$i'>$i</option>";
-				  							}
-				  						?>
-				  					</select>
-				  				</div>
-
-				  				<div class="form-group">
-				  					<select name="hbulan" class="form-control">
-				  						<option value="">-Bulan-</option>
-				  						<?php
-				  							for($i=1;$i<=12;$i++){
-				  								echo "<option value='$i'>$i</option>";
-				  							}
-				  						?>
-				  					</select>
-				  				</div>
-
-				  				<div class="form-group">
-				  					<select name="htanggal" class="form-control">
-				  						<option value="">-Tahun-</option>
-				  						<?php
-				  							for($i=1960;$i<=2016;$i++){
-				  								echo "<option value='$i'>$i</option>";
-				  							}
-				  						?>
-				  					</select>
-				  				</div>
-				  			</div>
-
-				  			<div class="form-group">
-				    			<label for="asal">Nama Kegiatan</label>
-				   				<input type="textbox" name="nama_kegiatan" class="form-control" id="nama_kegiatan" placeholder="">
+				    			<label for="program_studi">Program Studi</label>
+				   				<input type="textbox" name="program_studi" class="form-control" id="program_studi" placeholder="Masukkan Program Studi Mahasiswa">
 							</div>
 
-
-							<div class="form-group">
-				    			<label for="asal">Detail Kegiatan</label>
-
-				   				<textarea rows="4" cols="50" input type="text" name="detail_kegiatan" class="form-control" id="detail_kegiatan" placeholder="">
-				   				</textarea>
-							</div>
 
 							 <div class="form-group">
 
