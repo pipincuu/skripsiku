@@ -174,7 +174,7 @@
 
                         ?>
                         <li>
-                            <a href="Gedung"><i class="fa fa-users"></i> Data Mahasiswa Tingkat Akhir Lulusan 2017 <span class="badge"><?= $db ?></span></a>
+                            <a href="Data"><i class="fa fa-users"></i> Data Mahasiswa Tingkat Akhir Lulusan 2017 <span class="badge"><?= $db ?></span></a>
                         </li>
                         <!-- <?php
 

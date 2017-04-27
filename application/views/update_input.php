@@ -26,7 +26,7 @@
 
 					  <div class="panel-body">
 
-					<form action="<?php echo base_url() ?>Data" method="POST">
+					<form action="" method="POST">
 							<!-- <div class="form-group">
 				    			<label for="iduser">ID USER</label>
 				   				<input type="text" name="Id_user" class="form-control" id="noid" placeholder="">
@@ -34,24 +34,26 @@
 
 				 			<div class="form-group">
     							  <label for="nim">Nim</label>
-  								<input type="text" name="nim" class="form-control" id="nim" placeholder="Masukkan Nim Mahasiswa">
+  								<input type="text" name="nim" class="form-control" id="nim" placeholder="Masukkan Nim Mahasiswa" value="<?= $hasil['nim'] ?>">
     						</div>
 
 				  			<div class="form-group">
 				    			<label for="nama_mahasiswa">Nama</label>
-				    			<input type="text" name="nama_mahasiswa" class="form-control" id="nama_mahasiswa" placeholder="Masukkan Nama Mahasiswa">
+				    			<input type="text" name="nama_mahasiswa" class="form-control" id="nama_mahasiswa" placeholder="Masukkan Nama Mahasiswa"
+									value="<?= $hasil['nama_mahasiswa'] ?>">
 				  			</div>
 
 
 				  			<div class="form-group">
 				    			<label for="program_studi">Program Studi</label>
-				   				<input type="textbox" name="program_studi" class="form-control" id="program_studi" placeholder="Masukkan Program Studi Mahasiswa">
+				   				<input type="textbox" name="program_studi" class="form-control" id="program_studi" placeholder="Masukkan Program Studi Mahasiswa"
+									value="<?= $hasil['program_studi'] ?>">
 							</div>
 
 
 							 <div class="form-group">
 
-				 			 <input type="submit" name="submit "class="btn btn-lg btn-primary" value="Save">
+				 			 <input type="submit" name="submit" class="btn btn-lg btn-primary" name="ok" value="Save">
 					</form>
 
 				</div>

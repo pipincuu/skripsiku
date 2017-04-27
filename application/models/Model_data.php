@@ -3,6 +3,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Model_data extends CI_Model{
 
+  public function getData(){
+    $query = $this->db->get('mahasiswa');
+
+    return $query->result();
+  }
+
   function tambah_mahasiswa(){
 
   		$insert = array (
