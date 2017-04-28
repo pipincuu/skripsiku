@@ -20,9 +20,9 @@
 .navbar {
     position: relative;
     min-height: 50px;
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
     border: 1px solid transparent;
-    border-radius: 0px; 
+    border-radius: 0px;
 }
 
 .row.no-gutters {
@@ -113,7 +113,7 @@ section{
 
 .gaib{
     border-bottom: none;
-    border-top: none; 
+    border-top: none;
     text-align: center;
 }
 
@@ -144,7 +144,7 @@ overflow: auto;
 
 #left {
     height: 590px;
-    overflow-y: scroll; 
+    overflow-y: scroll;
   }
 
 /*::-webkit-scrollbar {

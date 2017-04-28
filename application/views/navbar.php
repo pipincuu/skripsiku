@@ -161,7 +161,7 @@
                             <a href="charts.html"><i class="fa fa-random"></i>  </a>
                         </li> -->
                         <li>
-                            <a href="Mahasiswa"><i class="fa fa-keyboard-o"></i>
+                            <a href="Data/tambah_mahasiswa"><i class="fa fa-keyboard-o"></i>
                           Input Data Kemahasiswaan</a>
                         </li>
                         <li>

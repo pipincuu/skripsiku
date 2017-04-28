@@ -17,13 +17,13 @@ class Data extends CI_Controller{
 
   }
   public function tambah_mahasiswa(){
-  		if(isset($_POST['ok'])){
-
-  			$insert = $this->Model_data->tambah_mahasiswa();
-  			redirect(base_url().'data');
+        $this->load->view('input');
+        if(isset($_POST['ok'])){
+  			$this->Model_data->tambah_mahasiswa();
+  			redirect(base_url().'Data');
   		}
   		// $this->load->view('navbar');
-  		$this->load->view('data');
+
 
   	}
 

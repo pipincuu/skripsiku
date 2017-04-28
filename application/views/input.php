@@ -26,7 +26,7 @@
 
 					  <div class="panel-body">
 
-					<form action="<?php echo base_url() ?>Data" method="POST">
+					<form action="" method="POST">
 							<!-- <div class="form-group">
 				    			<label for="iduser">ID USER</label>
 				   				<input type="text" name="Id_user" class="form-control" id="noid" placeholder="">
@@ -51,7 +51,7 @@
 
 							 <div class="form-group">
 
-				 			 <input type="submit" name="submit "class="btn btn-lg btn-primary" value="Save">
+				 			 <input type="submit" name="ok" class="gllpUpdateButton btn btn-success" value="Save">
 					</form>
 
 				</div>
