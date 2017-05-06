@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    $("#my-table").DataTable();
-    
+    // $("#my-table").DataTable();
+
     $('#my-table').DataTable( {
         "language": {
             "lengthMenu": "Menampilkan _MENU_ records",

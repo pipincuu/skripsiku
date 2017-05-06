@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Form Input Data Mahasiswa </title>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>res/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>res/css/style.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>res/font-awesome/css/font-awesome.css">
 
-	<script type="text/javascript" src="<?php echo base_url() ?>res/js/jquery.js"></script>
-	<script type="text/javascript" src="<?php echo base_url() ?>res/js/bootstrap.js"></script>
-	<script type="text/javascript" src="<?php echo base_url() ?>bs/js/bootstrap-datepicker.js"></script>
-</head>
-<body>
-<div class="container">
+<div class="container-fluid panelPeta-default">
 		<div class="row">
-
-
 
 			<div class="col-md-12">
 				<div class="panel-biruw panel-default">
@@ -58,7 +44,3 @@
 
 		</div>
 	</div>
-
-
-</body>
-</html>
