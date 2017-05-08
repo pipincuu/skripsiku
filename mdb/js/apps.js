@@ -4,7 +4,7 @@ var app = angular.module('apps',[]);
 
 app.controller('mahasiswaController', function($http, $scope) {
 
-  $http.get("http://localhost/skripsi/mdb/json/mahasiswa.json").then(
+  $http.get("http://localhost/kemahasiswaan/Service/get").then(
 
     function success(data){
         $scope.mhs = data.data;
@@ -17,6 +17,8 @@ app.controller('mahasiswaController', function($http, $scope) {
   );
 
 });
+
+app.controller('',function(){})
 
 app.controller('bebasControlelr',function($http, $scope){
 

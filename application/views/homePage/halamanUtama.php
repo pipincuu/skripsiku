@@ -28,7 +28,7 @@
 
 					<div class="card-block">
 						<!--Name-->
-						<h4 class="card-title"><strong>{{ mhs.NIM }}</strong></h4>
+						<h4 class="card-title"><strong>{{ mhs.nim }}</strong></h4>
 						<p>{{ mhs.nama_mahasiswa }}</p>
 						<!--Quotation-->
 						<p>
