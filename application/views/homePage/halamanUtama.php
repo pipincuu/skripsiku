@@ -23,7 +23,9 @@
 					</div>
 
 					<!--Avatar-->
-					<div class="avatar"><img src="<?= base_url('mdb/img/') ?>fiqi.jpg" class="rounded-circle img-responsive">
+					<div class="avatar">
+						<img ng-if="mhs.jk=='laki-laki'" src="<?= base_url('img/') ?>boy-512.png" class="rounded-circle img-responsive">
+						<img ng-if="mhs.jk=='perempuan'" src="<?= base_url('img/') ?>woman-512.png" class="rounded-circle img-responsive">
 					</div>
 
 					<div class="card-block">
