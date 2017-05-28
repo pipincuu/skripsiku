@@ -1,20 +1,17 @@
 /*!
- * Start Bootstrap - SB Admin Bootstrap Admin Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ * Start Bootstrap - SB Admin (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
 /* Global Styles */
 
 body {
     margin-top: 100px;
-    background-color: #fff;
+    background-color: #222;
 }
 
 @media(min-width:768px) {
-.side-nav {
-    background-color: #31708F;
-}
     body {
         margin-top: 50px;
     }
@@ -60,7 +57,7 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     line-height: 20px;
-    color: #f5f5f5;
+    color: #999;
 }
 
 .top-nav>li>a:hover,
@@ -69,7 +66,7 @@ body {
 .top-nav>.open>a:hover,
 .top-nav>.open>a:focus {
     color: #fff;
-    background-color: #fff;
+    background-color: #000;
 }
 
 .top-nav>.open>.dropdown-menu {
@@ -125,7 +122,7 @@ ul.alert-dropdown {
         border: none;
         border-radius: 0;
         overflow-y: auto;
-        background-color: #1A237E;
+        background-color: #222;
         bottom: 0;
         overflow-x: hidden;
         padding-bottom: 40px;
@@ -150,7 +147,7 @@ ul.alert-dropdown {
     display: block;
     padding: 10px 15px 10px 38px;
     text-decoration: none;
-    color: #f5f5f5;
+    color: #999;
 }
 
 .side-nav>li>ul>li>a:hover {
@@ -227,35 +224,4 @@ ul.alert-dropdown {
 
 .panel-yellow > a:hover {
     color: #df8a13;
-}
-
-.panelPeta-default {
-    border-color: #ddd;
-    margin-left: 17%;
-    margin-top: 10px;
-}
-
-
-.gllpMap {
-   /* width: 500px;*/
-    height: 250px;
-    margin: 15px 0px 15px 0px;
-}
-
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #222222;
-    background-color: #1A237E;
-}
-
-.navbar-inverse {
-    background-color: #1A237E;
-    border-color: #1A237E;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-    color: #f5f5f5;
-}
-
-.navbar-inverse .navbar-brand {
-    color: #f5f5f5;
 }

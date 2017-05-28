@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-// $config['base_url']	= 'http://localhost/proyek';
+// $config['base_url']	= '';
 $config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
 $config['base_url'] .= "://".$_SERVER['HTTP_HOST'];
 if (!isset($_SERVER['ORIG_SCRIPT_NAME'])){
@@ -22,7 +22,6 @@ if (!isset($_SERVER['ORIG_SCRIPT_NAME'])){
 }else{
   $config['base_url'] .= str_replace(basename($_SERVER['ORIG_SCRIPT_NAME']),"",$_SERVER['ORIG_SCRIPT_NAME']);
 }
-
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -231,7 +230,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = 'qwertyoiupouiasjkdghjsadgzmnvbcnxmzv1234654';
+$config['encryption_key'] = '';
 
 /*
 |--------------------------------------------------------------------------

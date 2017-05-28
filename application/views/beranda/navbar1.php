@@ -119,27 +119,27 @@
         <li class="active">
         </li>
         <li>
-          <a href="Beranda"><i class="fa fa-fw fa-home"></i> Beranda</a>
+          <a href="Dashboard"><i class="fa fa-fw fa-home"></i> Beranda</a>
         </li>
         <!-- <li>
         <a href="charts.html"><i class="fa fa-random"></i>  </a>
       </li> -->
       <li>
-        <a href="Data/tambah_mahasiswa"><i class="fa fa-keyboard-o"></i>
+        <a href="Anggota"><i class="fa fa-keyboard-o"></i>
           Input Data Kemahasiswaan</a>
         </li>
         <li>
           <!-- <a href="User"><i class="fa fa-registered"></i> User</a>
         </li> -->
 
-        <?php
+        <!-- <?php
 
         $db = $this->db->count_all_results('mahasiswa');
 
-        ?>
-        <li>
+        ?> -->
+        <!-- <li>
           <a href="Data"><i class="fa fa-users"></i> Data Mahasiswa Tingkat Akhir Lulusan 2017 <span class="badge"><?= $db ?></span></a>
-        </li>
+        </li> -->
 
 </div>
 <!-- /.navbar-collapse -->
