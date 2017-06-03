@@ -1,11 +1,11 @@
 $(document).ready(function() {
     // $("#my-table").DataTable();
-
+    
     $('#my-table').DataTable( {
         "language": {
             "lengthMenu": "Menampilkan _MENU_ records",
             "zeroRecords": "Data Tidak Ditemukan!!",
-            "info": "Menampilkan entry _RECORD_ dari _RECORDS_",
+            "info": "Menampilkan halaman _PAGE_ dari _PAGES_",
             "infoEmpty": "Tidak ada records",
             "infoFiltered": "(filtered from _MAX_ total records)",
             "paginate": {

@@ -39,25 +39,30 @@
   						<div class="col-md-6">
   							<div class="form-group">
   				    			<label for="Nim">Nim</label>
-  				   				<input type="text" name="Nim_Mahasiswa" class="form-control" id="nim" placeholder="Masukkan Nim Mahasiswa">
+  				   				<input type="text" name="Nim_Mahasiswa" class="form-control" id="nim" placeholder="Masukkan Nim Mahasiswa"
+                    value="<?= $hasil['nim'] ?>">
   				 			 </div>
 
   				  			<div class="form-group">
   				    			<label for="Nama">Nama Mahasiswa</label>
-  				    			<input type="text" name="Nama_Mahasiswa"  class="form-control" id="nama" placeholder="Masukkan Nama Mahasiswa">
+  				    			<input type="text" name="Nama_Mahasiswa"  class="form-control" id="nama" placeholder="Masukkan Nama Mahasiswa"
+                    value="<?= $hasil['nama_mahasiswa'] ?>">
   				  			</div>
   				  			<div class="form-group">
   				    			<label for="Jurusan">Jurusan</label>
-  				   				<input type="text" name="Jurusan_Anggota" class="form-control" id="jurusan" placeholder="Masukkan Jurusan Mahasiswa">
+  				   				<input type="text" name="Jurusan_Anggota" class="form-control" id="jurusan" placeholder="Masukkan Jurusan Mahasiswa"
+                    value="<?= $hasil['jurusan'] ?>">
+
   				 			 </div>
                  <div class="form-group">
                    <label for="Program_Studi">Program Studi</label>
-                   <input type="text" name="Prodi_Anggota" class="form-control" id="programstudi" placeholder="Masukkan Program Studi Mahasiswa">
+                   <input type="text" name="Prodi_Anggota" class="form-control" id="programstudi" placeholder="Masukkan Program Studi Mahasiswa"
+                   value="<?= $hasil['program_studi'] ?>">
                 </div>
   				 			 <div class="form-group">
   				    			<label for="ttl">Tanggal Lahir</label>
   				   				<div class="form-group input-append date" id="dp1" data-date-format="yyyy-mm-dd" >
-  								  <input class="span2 form-control" name="Tgl_Lahir" size="3" type="text" value="<?php echo date('Y-m-d'); ?>">
+  								  <input class="span2 form-control" name="Tgl_Lahir" size="3" type="text" value="<?= $hasil['tanggal_lahir'] ?>">
   								 <!--  <di class="add-on input-group-addon"><i class="fa fa-calendar"></i></span> -->
   								</div>
   				 			 </div>
@@ -67,24 +72,27 @@
                 <div class="form-group">
                    <label for="tanggal_registrasi">Tanggal Registrasi</label>
                    <div class="form-group input-append date" id="dp1" data-date-format="yyyy-mm-dd" >
-                   <input class="span2 form-control" name="Tgl_Registrasi" size="3" type="text" value="<?php echo date('Y-m-d'); ?>">
+                   <input class="span2 form-control" name="Tgl_Registrasi" size="3" type="text" value="<?= $hasil['tanggal_registrasi'] ?>">
                   <!--  <di class="add-on input-group-addon"><i class="fa fa-calendar"></i></span> -->
                   <div class="form-group">
    				    			<label for="tanggal_expired">Tanggal Expired</label>
    				   				<div class="form-group input-append date" id="dp1" data-date-format="yyyy-mm-dd" >
-   								  <input class="span2 form-control" name="Tgl_Expired" size="3" type="text" value="<?php echo date('Y-m-d'); ?>">
+   								  <input class="span2 form-control" name="Tgl_Expired" size="3" type="text" value="<?= $hasil['tanggal_expired'] ?>">
    								 <!--  <di class="add-on input-group-addon"><i class="fa fa-calendar"></i></span> -->
   				 			 <div class="form-group">
   				    			<label for="jk">Jenis Kelamin</label>
-  				   				<input type="text" name="JK_Anggota"  class="form-control" id="jk" placeholder="Masukkan Jenis Kelamin Anggota">
+  				   				<input type="text" name="JK_Anggota"  class="form-control" id="jk" placeholder="Masukkan Jenis Kelamin Anggota"
+                    value="<?= $hasil['jenis_kelamin'] ?>">
   				 			 </div>
   							 <div class="form-group">
   				    			<label for="alamat">Alamat </label>
-  				   				<input type="text" name="Alamat"  class="form-control" id="alamat" placeholder="Masukkan Alamat Anggota">
+  				   				<input type="text" name="Alamat"  class="form-control" id="alamat" placeholder="Masukkan Alamat Anggota"
+                    value="<?= $hasil['alamat'] ?>">
   				 			 </div>
   							 <div class="form-group">
   				    			<label for="notelp">No. Telepon</label>
-  				   				<input type="text" name="Notelp"  class="form-control" id="notelp" placeholder="Masukkan No.Telepon Anggota">
+  				   				<input type="text" name="Notelp"  class="form-control" id="notelp" placeholder="Masukkan No.Telepon Anggota"
+                    value="<?= $hasil['no_telepon'] ?>">
   				 			 </div>
 
   				 			 <input type="submit" class="btn btn-primary" name="ok" value="Save">

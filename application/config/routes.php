@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = 'Anggota';
+$route['default_controller'] = 'Dashboard';
 $route['404_override'] = '';
 
 

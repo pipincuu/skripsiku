@@ -123,40 +123,23 @@
               <li>
                   <a href="Dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
               </li>
-              <!-- <li>
-                  <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
-              </li> -->
-              <!-- <li>
-                  <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
-              </li> -->
               <li>
-                  <a href="Anggota"><i class="fa fa-fw fa-edit"></i> Forms</a>
-              </li>
-              <!-- <li>
-                  <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+                  <a href="Bibliography"><i class="fa fa-fw fa-bookmark"></i> Bibliography</a>
               </li>
               <li>
-                  <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
+                  <a href="Anggota"><i class="fa fa-fw fa-user"></i> Membership</a>
               </li>
               <li>
-                  <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-                  <ul id="demo" class="collapse">
-                      <li>
-                          <a href="#">Dropdown Item</a>
-                      </li>
-                      <li>
-                          <a href="#">Dropdown Item</a>
-                      </li>
-                  </ul>
+                  <a href="Anggota"><i class="fa fa-fw fa-user"></i> Kategori</a>
               </li>
               <li>
-                  <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+                  <a href=""><i class="fa fa-fw fa-desktop"></i> Sirkulasi</a>
               </li>
-              <li>
-                  <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
-              </li> -->
+
 
       </div>
-      </ul>
-      <!-- /.navbar-collapse -->
-  </nav>
+                  <!-- /.navbar-collapse -->
+
+    </ul>
+
+    </nav>
