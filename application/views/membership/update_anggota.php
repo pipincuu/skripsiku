@@ -38,31 +38,31 @@
 
   						<div class="col-md-6">
   							<div class="form-group">
-  				    			<label for="Nim">Nim</label>
-  				   				<input type="text" name="Nim_Mahasiswa" class="form-control" id="nim" placeholder="Masukkan Nim Mahasiswa"
+  				    			<label for="nim">Nim</label>
+  				   				<input type="text" name="nim" class="form-control" id="nim" placeholder="Masukkan Nim Mahasiswa"
                     value="<?= $hasil['nim'] ?>">
   				 			 </div>
 
   				  			<div class="form-group">
-  				    			<label for="Nama">Nama Mahasiswa</label>
-  				    			<input type="text" name="Nama_Mahasiswa"  class="form-control" id="nama" placeholder="Masukkan Nama Mahasiswa"
+  				    			<label for="nama_mahasiswa">Nama Mahasiswa</label>
+  				    			<input type="text" name="nama_mahasiswa"  class="form-control" id="nama_mahasiswa" placeholder="Masukkan Nama Mahasiswa"
                     value="<?= $hasil['nama_mahasiswa'] ?>">
   				  			</div>
   				  			<div class="form-group">
-  				    			<label for="Jurusan">Jurusan</label>
-  				   				<input type="text" name="Jurusan_Anggota" class="form-control" id="jurusan" placeholder="Masukkan Jurusan Mahasiswa"
+  				    			<label for="jurusan">Jurusan</label>
+  				   				<input type="text" name="jurusan" class="form-control" id="jurusan" placeholder="Masukkan Jurusan Mahasiswa"
                     value="<?= $hasil['jurusan'] ?>">
 
   				 			 </div>
                  <div class="form-group">
-                   <label for="Program_Studi">Program Studi</label>
-                   <input type="text" name="Prodi_Anggota" class="form-control" id="programstudi" placeholder="Masukkan Program Studi Mahasiswa"
+                   <label for="program_studi">Program Studi</label>
+                   <input type="text" name="program_studi" class="form-control" id="program_studi" placeholder="Masukkan Program Studi Mahasiswa"
                    value="<?= $hasil['program_studi'] ?>">
                 </div>
   				 			 <div class="form-group">
-  				    			<label for="ttl">Tanggal Lahir</label>
-  				   				<div class="form-group input-append date" id="dp1" data-date-format="yyyy-mm-dd" >
-  								  <input class="span2 form-control" name="Tgl_Lahir" size="3" type="text" value="<?= $hasil['tanggal_lahir'] ?>">
+  				    			<label for="tanggal_lahir">Tanggal Lahir</label>
+  				   				<div class="form-group input-append date" id="tanggal_lahir" data-date-format="yyyy-mm-dd" >
+  								  <input class="span2 form-control" name="tanggal_lahir" size="3" type="text" value="<?= $hasil['tanggal_lahir'] ?>">
   								 <!--  <di class="add-on input-group-addon"><i class="fa fa-calendar"></i></span> -->
   								</div>
   				 			 </div>
@@ -71,31 +71,31 @@
   						<div class="col-md-6">
                 <div class="form-group">
                    <label for="tanggal_registrasi">Tanggal Registrasi</label>
-                   <div class="form-group input-append date" id="dp1" data-date-format="yyyy-mm-dd" >
-                   <input class="span2 form-control" name="Tgl_Registrasi" size="3" type="text" value="<?= $hasil['tanggal_registrasi'] ?>">
+                   <div class="form-group input-append date" id="tanggal_registrasi" data-date-format="yyyy-mm-dd" >
+                   <input class="span2 form-control" name="tanggal_registrasi" size="3" type="text" value="<?= $hasil['tanggal_registrasi'] ?>">
                   <!--  <di class="add-on input-group-addon"><i class="fa fa-calendar"></i></span> -->
                   <div class="form-group">
    				    			<label for="tanggal_expired">Tanggal Expired</label>
-   				   				<div class="form-group input-append date" id="dp1" data-date-format="yyyy-mm-dd" >
-   								  <input class="span2 form-control" name="Tgl_Expired" size="3" type="text" value="<?= $hasil['tanggal_expired'] ?>">
+   				   				<div class="form-group input-append date" id="tanggal_expired" data-date-format="yyyy-mm-dd" >
+   								  <input class="span2 form-control" name="tanggal_expired" size="3" type="text" value="<?= $hasil['tanggal_expired'] ?>">
    								 <!--  <di class="add-on input-group-addon"><i class="fa fa-calendar"></i></span> -->
   				 			 <div class="form-group">
-  				    			<label for="jk">Jenis Kelamin</label>
-  				   				<input type="text" name="JK_Anggota"  class="form-control" id="jk" placeholder="Masukkan Jenis Kelamin Anggota"
+  				    			<label for="jenis_kelamin">Jenis Kelamin</label>
+  				   				<input type="text" name="jenis_kelamin"  class="form-control" id="jenis_kelamin" placeholder="Masukkan Jenis Kelamin Anggota"
                     value="<?= $hasil['jenis_kelamin'] ?>">
   				 			 </div>
   							 <div class="form-group">
   				    			<label for="alamat">Alamat </label>
-  				   				<input type="text" name="Alamat"  class="form-control" id="alamat" placeholder="Masukkan Alamat Anggota"
+  				   				<input type="text" name="alamat"  class="form-control" id="alamat" placeholder="Masukkan Alamat Anggota"
                     value="<?= $hasil['alamat'] ?>">
   				 			 </div>
   							 <div class="form-group">
-  				    			<label for="notelp">No. Telepon</label>
-  				   				<input type="text" name="Notelp"  class="form-control" id="notelp" placeholder="Masukkan No.Telepon Anggota"
+  				    			<label for="no_telepon">No. Telepon</label>
+  				   				<input type="text" name="no_telepon"  class="form-control" id="no_telepon" placeholder="Masukkan No.Telepon Anggota"
                     value="<?= $hasil['no_telepon'] ?>">
   				 			 </div>
 
-  				 			 <input type="submit" class="btn btn-primary" name="ok" value="Save">
+  				 			 <input type="submit" class="btn btn-primary" name="submit" value="Save">
   						</div>
 
 

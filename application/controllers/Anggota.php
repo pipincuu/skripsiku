@@ -13,14 +13,14 @@ class Anggota extends CI_Controller {
     $data['tampil']	= $this->Model_anggota->tampil_anggota();
     $this->load->view('beranda/header');
     $this->load->view('beranda/navbar');
-    $this->load->view('daftar_anggota', $data);
+    $this->load->view('membership/daftar_anggota', $data);
     $this->load->view('beranda/js');
   }
 
   function ubah_anggota($id){
     $data['hasil'] = $this->Model_anggota->data_update_anggota($id);
 
-    if(isset($_POST['ok'])){
+    if(isset($_POST['submit'])){
       $this->Model_anggota->update($id);
       redirect(base_url().'Anggota');
     }
@@ -28,7 +28,7 @@ class Anggota extends CI_Controller {
     $this->load->view('beranda/header');
     $this->load->view('beranda/navbar');
     $this->load->view('beranda/js');
-    $this->load->view('update_anggota', $data);
+    $this->load->view('membership/update_anggota', $data);
   }
 
 
