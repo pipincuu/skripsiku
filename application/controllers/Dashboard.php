@@ -8,7 +8,7 @@ class Dashboard extends CI_Controller {
     $this->load->view('beranda/header');
     $this->load->view('beranda/navbar');
     $this->load->view('beranda/dashboard');
-    $this->load->view('beranda/js');
+    $this->load->view('js');
   }
 
 }

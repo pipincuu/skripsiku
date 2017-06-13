@@ -14,7 +14,7 @@ class Anggota extends CI_Controller {
     $this->load->view('beranda/header');
     $this->load->view('beranda/navbar');
     $this->load->view('membership/daftar_anggota', $data);
-    $this->load->view('beranda/js');
+    $this->load->view('js');
   }
 
   function ubah_anggota($id){
@@ -27,7 +27,7 @@ class Anggota extends CI_Controller {
     // $this->load->view('navbar');
     $this->load->view('beranda/header');
     $this->load->view('beranda/navbar');
-    $this->load->view('beranda/js');
+    $this->load->view('js');
     $this->load->view('membership/update_anggota', $data);
   }
 

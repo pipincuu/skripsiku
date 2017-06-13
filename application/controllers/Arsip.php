@@ -10,6 +10,8 @@ class Arsip extends CI_Controller {
 
   public function index(){
 
+    // $data['id'] = $this->model_bibli->dpt_id();
+
     if(isset($_POST['ok'])){
 
       $insert = $this->Model_bibli->tambah_bibli();

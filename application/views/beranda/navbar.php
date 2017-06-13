@@ -1,3 +1,5 @@
+<html>
+<body>
 <div id="wrapper">
 
   <!-- Navigation -->
@@ -116,10 +118,8 @@
       <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
       <!-- <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav"> -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse navbar-inverse navbar-collapse, navbar-inverse navbar-form .navbar-inverse .navbar-nav>li>a  ">
-            <ul class="nav navbar-nav side-nav navbar-ex1-collapse">
-              <li class="active">
-              </li>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav">
               <li>
                   <a href="Dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
               </li>
@@ -130,16 +130,39 @@
                   <a href="Anggota"><i class="fa fa-fw fa-user"></i> Membership</a>
               </li>
               <li>
-                  <a href="Anggota"><i class="fa fa-fw fa-user"></i> Kategori</a>
+                  <a href="Kategori"><i class="fa fa-list-alt"></i>  Kategori</a>
               </li>
               <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-desktop"></i> Sirkulasi <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="Sirkulasi">Peminjaman Buku</a>
+                            </li>
+                            <li>
+                                <a href="#">Pengembalian Buku</a>
+                            </li>
+                            <li>
+                                <a href="Sirkulasi/liat_sirkulasi">Data Peminjaman Buku</a>
+                            </li>
+                            <li>
+                                <a href="">Sejarah Peminjaman</a>
+                            </li>
+                        </ul>
+                    </li>
+              <!-- <li>
                   <a href=""><i class="fa fa-fw fa-desktop"></i> Sirkulasi</a>
-              </li>
+              </li> -->
 
-
+            </ul>
       </div>
                   <!-- /.navbar-collapse -->
 
-    </ul>
-
     </nav>
+
+    <script src="<?= base_url('res/js/jquery.js') ?>"</script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="<?= base_url('res/js/bootstrap.min.js') ?>"</script>
+
+  </body>
+</html>

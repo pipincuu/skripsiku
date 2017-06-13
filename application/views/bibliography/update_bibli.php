@@ -70,22 +70,26 @@
                    <label for="edisi">Edisi</label>
                    <input type="text" name="edisi" class="form-control" id="edisi" placeholder="Masukkan Edisi Buku" value="<?= $hasil['edisi'] ?>">
                 </div>
-
-
               </div>
 
+              <div class="col-md-6">
               <div class="form-group">
                    <label for="jumlah_eksemplar">Jumlah Eksemplar</label>
                    <input type="text" name="jumlah_eksemplar" class="form-control" id="jumlah_eksemplar" placeholder="Masukkan Jumlah Eksemplar Buku" value="<?= $hasil['jumlah_eksemplar'] ?>">
               </div>
               <div class="form-group">
-                    <label for="jenis_koleksi_buku">Jenis Koleksi Buku</label>
-                      <select name="Jenis_Koleksi_Buku" class="form-control">
-                        <option value="Koleksi Umum">Koleksi Umum</option>
-                        <option value="Koleksi Laporan Akhir/Skripsi">Koleksi Laporan Akhir/Skripsi</option>
-                        <option value="Koleksi Tandon">Koleksi Tandon</option>
-                      </select>
+                     <label for="jumlah_stok_buku">Jumlah Stok Buku</label>
+                     <input type="text" name="jumlah_stok_buku" class="form-control" id="jumlah_stok_buku" placeholder="Masukkan Jumlah Stok Buku"
+                     value="<?= $hasil['jumlah_stok_buku'] ?>">
                 </div>
+              <div class="form-group">
+                    <label for="jenis_koleksi_buku">Jenis Koleksi Buku</label>
+                     <select name="jenis_koleksi_buku" class="form-control" value="<?= $hasil['jenis_koleksi_buku'] ?>">
+                     <option value="Koleksi Umum">Koleksi Umum</option>
+                     <option value="Koleksi Laporan Akhir">Koleksi Laporan Akhir/Skripsi</option>
+                     <option value="Koleksi Tandon">Koleksi Tandon</option>
+                  </select>
+                 </div>
                  <div class="form-group">
                    <label for="no_registrasi">No Registrasi</label>
                    <input type="text" name="no_registrasi" class="form-control" id="no_registrasi" placeholder="Masukkan No Registrasi Buku" value="<?= $hasil['no_registrasi'] ?>">

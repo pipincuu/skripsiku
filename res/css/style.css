@@ -129,7 +129,7 @@ overflow: auto;
 .panel-biru {
     margin-top: 40px;
     margin-bottom: 20px;
-    background-color: #fff;
+    background-color: #c0b62b
     border: 1px solid #303F9F;
     border-radius: 4px;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
@@ -137,7 +137,7 @@ overflow: auto;
 }
 
 .panel-biru > .panel-heading {
-    color: #FFF;
+    color: #c0b62b;
     background-color: #303F9F;
     border-color: #303F9F;
 }

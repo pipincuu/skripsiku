@@ -54,27 +54,33 @@
                    <label for="program_studi">Program Studi</label>
                    <input type="text" name="program_studi" class="form-control" id="program_studi" placeholder="Masukkan Program Studi Mahasiswa">
                 </div>
-  				 			 <div class="form-group">
-  				    			<label for="tanggal_lahir">Tanggal Lahir</label>
-  				   				<div class="form-group input-append date" id="tanggal_lahir" data-date-format="yyyy-mm-dd" >
-  								  <input class="span2 form-control" name="tanggal_lahir" size="3" type="text" value="<?php echo date('Y-m-d'); ?>">
-  								 <!--  <di class="add-on input-group-addon"><i class="fa fa-calendar"></i></span> -->
-  								</div>
-  				 			 </div>
+
+
   				 		</div>
 
   						<div class="col-md-6">
+                <div class="form-group">
+                   <label for="tanggal_lahir">Tanggal Lahir</label>
+                   <div class="form-group input-append date" id="tanggal_lahir" data-date-format="yyyy-mm-dd" >
+                   <input class="span2 form-control" name="tanggal_lahir" size="3" type="text" value="<?php echo date('Y-m-d'); ?>">
+                  <!--  <di class="add-on input-group-addon"><i class="fa fa-calendar"></i></span> -->
+                 </div>
+                </div>
                 <div class="form-group">
                    <label for="tanggal_registrasi">Tanggal Registrasi</label>
                    <div class="form-group input-append date" id="tanggal_registrasi" data-date-format="yyyy-mm-dd" >
                    <input class="span2 form-control" name="tanggal_registrasi" size="3" type="text" value="<?php echo date('Y-m-d'); ?>">
                   <!--  <di class="add-on input-group-addon"><i class="fa fa-calendar"></i></span> -->
+                  </div>
+                </div>
                   <div class="form-group">
    				    			<label for="tanggal_expired">Tanggal Expired</label>
    				   				<div class="form-group input-append date" id="tanggal_expired" data-date-format="yyyy-mm-dd" >
    								  <input class="span2 form-control" name="tanggal_expired" size="3" type="text" value="<?php echo date('Y-m-d'); ?>">
    								 <!--  <di class="add-on input-group-addon"><i class="fa fa-calendar"></i></span> -->
-  				 			 <div class="form-group">
+                   </div>
+                 </div>
+                 <div class="form-group">
   				    			<label for="jenis_kelamin">Jenis Kelamin</label>
   				   				<input type="text" name="jenis_kelamin"  class="form-control" id="jenis_kelamin" placeholder="Masukkan Jenis Kelamin Anggota">
   				 			 </div>

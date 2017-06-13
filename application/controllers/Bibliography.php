@@ -12,11 +12,12 @@ class Bibliography extends CI_Controller {
   public function index()
   {
     $data['tampil']	= $this->Model_bibli->tampil_bibli();
+    // $data['query'] = $this->model_bibli->getData();
 
     $this->load->view('beranda/header');
     $this->load->view('beranda/navbar');
     $this->load->view('bibliography/daftar_bibli', $data);
-    $this->load->view('beranda/js');
+    $this->load->view('js');
   }
 
 	function ubah_bibli($id){
@@ -28,7 +29,7 @@ class Bibliography extends CI_Controller {
 		}
     $this->load->view('beranda/header');
     $this->load->view('beranda/navbar');
-    $this->load->view('beranda/js');
+    $this->load->view('js');
     $this->load->view('bibliography/update_bibli', $data);
 	}
 
@@ -41,7 +42,7 @@ class Bibliography extends CI_Controller {
   function dashboard(){
     $this->load->view('beranda/header');
     $this->load->view('beranda/navbar');
-    $this->load->view('beranda/js');
+    $this->load->view('js');
     $this->load->view('beranda/dashboard');
   }
 

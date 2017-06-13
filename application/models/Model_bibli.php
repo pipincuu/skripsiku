@@ -3,11 +3,16 @@
 class Model_Bibli extends CI_Controller {
 
 
-  public function getData(){
-    $query = $this->db->get('bibliography');
+  // public function getData(){
+  //   $query = $this->db->get('bibliography');
+  //
+  //   return $query->result();
+  // }
 
-    return $query->result();
-  }
+  // function dpt_id(){
+  // 		$id = $this->db->get('kategori');
+  // 		return $id->result();
+  // 	}
 
   function tambah_bibli(){
     $insert = array (
@@ -21,6 +26,7 @@ class Model_Bibli extends CI_Controller {
         'tempat_terbit'	     => $this->input->post('tempat_terbit'),
         'edisi'	             => $this->input->post('edisi'),
         'jumlah_eksemplar'	 => $this->input->post('jumlah_eksemplar'),
+        'jumlah_stok_buku'	 => $this->input->post('jumlah_stok_buku'),
         'jenis_koleksi_buku' => $this->input->post('jenis_koleksi_buku'),
         'no_registrasi'	     => $this->input->post('no_registrasi'),
         'no_acc'	           => $this->input->post('no_acc'),
@@ -51,6 +57,7 @@ class Model_Bibli extends CI_Controller {
       'tempat_terbit'	     => $this->input->post('tempat_terbit'),
       'edisi'	             => $this->input->post('edisi'),
       'jumlah_eksemplar'	 => $this->input->post('jumlah_eksemplar'),
+      'jumlah_stok_buku'	 => $this->input->post('jumlah_stok_buku'),
       'jenis_koleksi_buku' => $this->input->post('jenis_koleksi_buku'),
       'no_registrasi'	     => $this->input->post('no_registrasi'),
       'no_acc'	           => $this->input->post('no_acc'),

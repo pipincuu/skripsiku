@@ -225,3 +225,9 @@ ul.alert-dropdown {
 .panel-yellow > a:hover {
     color: #df8a13;
 }
+
+.panelPeta-default {
+    border-color: #ddd;
+    margin-left: 17%;
+    margin-top: 10px;
+}

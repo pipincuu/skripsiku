@@ -3,7 +3,7 @@
 <!-- <div class="col-md-12"> -->
 				<div class="panel panel-default">
 					 <div class="panel-heading">
-								<h3 class="panel-title text-center"><B>Daftar Anggota Perpustakaan</B></h3>
+								<h3 class="panel-title text-center"><B>Arsip Peminjaman Anggota Perpustakaan</B></h3>
 						  </div>
 					<div class="panel-body">
 						<!-- <div class="row"> -->
@@ -12,28 +12,24 @@
 										<i class="fa fa-dashboard"></i>  <a href="Dashboard">Dashboard</a>
 								</li>
 								<li class="active">
-										<i class="fa fa fa-users"></i> Membership
+										<i class="fa fa fa-desktop"></i> Sirkulasi
 								</li>
 						</ol>
 						<ol class="breadcrumb">
 							<div class="text-center">
-							<a href="<?php echo base_url() ?>Member" method="POST" class="btn btn-success"><i class="fa fa-plus-circle"></i> Tambah Anggota</a>
+							<a href="<?php echo base_url() ?>Sirkulasi" method="POST" class="btn btn-success"><i class="fa fa-plus-circle"></i> Tambah Peminjaman</a>
 					</div>
 						</ol>
 
 							<table id="my-table" class="table table-bordered table-hover dt-responsive" cellspacing="0" width="100%">
 								<thead>
 									<tr>
+										<th>Id Peminjaman</th>
 										<th>Nim</th>
-										<th>Nama Mahasiswa</th>
-										<th>Jurusan</th>
-										<th>Program Studi</th>
-										<th>Tgl Lahir</th>
-										<th>Tgl Registrasi</th>
-										<th>Tgl Expired</th>
-										<th>Jenis Kelamin</th>
-										<th>Alamat</th>
-										<th>No. Telepon</th>
+										<th>Id Buku</th>
+										<!-- <th>Id Detail Buku</th> -->
+										<th>Tanggal Pinjam</th>
+										<th>Tanggal Kembali</th>
 										<th>Action</th>
 									</tr>
 								</thead>
@@ -42,21 +38,16 @@
 								<tbody>
 									<?php foreach($tampil as $key){ ?>
 									<tr>
-										<td><?php echo $key['nim']; ?></td>
-										<td><?php echo $key['nama_mahasiswa']; ?></td>
-										<td><?php echo $key['jurusan']; ?></td>
-										<td><?php echo $key['program_studi']; ?></td>
-										<td><?php echo $key['tanggal_lahir']; ?></td>
-										<td><?php echo $key['tanggal_registrasi']; ?></td>
-										<td><?php echo $key['tanggal_expired']; ?></td>
-										<td><?php echo $key['jenis_kelamin']; ?></td>
-										<td><?php echo $key['alamat']; ?></td>
-										<td><?php echo $key['no_telepon']; ?></td>
+										<td><?php echo $key['id_pinjam'] ?></td>
+										<td><?php echo $key['nim'] ?></td>
+										<td><?php echo $key['id_buku'] ?></td>
+										<td><?php echo $key['tanggal_pinjam']; ?></td>
+										<td><?php echo $key['tanggal_kembali']; ?></td>
 
 										<td class="text-center">
 											<div class="btn-group-vertical">
-												<a href="<?php echo base_url().'Anggota/ubah_anggota/'.$key['nim'] ?>" class="btn btn-warning"><i class="fa fa-edit"></i> </a>
-												<a href="<?php echo base_url().'Anggota/hapus_anggota/'.$key['nim'] ?>" class="btn btn-danger"><i class="fa fa-times"></i> </a>
+												<a href="<?php echo base_url().'Sirkulasi/ubah_sirkulasi/'.$key['id_pinjam'] ?>" class="btn btn-warning"><i class="fa fa-edit"></i> </a>
+												<a href="<?php echo base_url().'Sirkulasi/hapus_sirkulasi/'.$key['id_pinjam'] ?>" class="btn btn-danger"><i class="fa fa-times"></i> </a>
 											</div>
 										</td>
 									</tr>
