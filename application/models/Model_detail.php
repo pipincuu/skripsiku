@@ -12,15 +12,15 @@ class Model_detail extends CI_Model{
   public function insert($jml){
 
     $this->db->from('bibliography');
-    $this->db->where('id_buku', $id);
+    $this->db->order_by('id_buku', 'desc');
     $data_bibli = $this->db->get()->first_row();
 
     $id_bli = $data_bibli->id_buku;
 
-    for($i=1;i<=$jml;$i++){
+    for($i=1;$i<=$jml;$i++){
       $data = array(
-        "id_buku"  => $id_bli,
-        "jumlah"   => $jml
+        "id_buku"             => $id_bli,
+        "status_pinjam_buku"  => "tersedia"
       );
         $this->db->insert('detail_bibli', $data);
     }
