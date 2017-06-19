@@ -5,7 +5,10 @@ class Arsip extends CI_Controller {
   public function __construct()
   {
     parent::__construct();
+    $this->load->model('Model_kategori');
     $this->load->model('Model_bibli');
+    $this->load->model('Model_detail');
+
   }
 
   public function index(){
@@ -15,13 +18,19 @@ class Arsip extends CI_Controller {
     if(isset($_POST['ok'])){
 
       $insert = $this->Model_bibli->tambah_bibli();
+      $this->Model_detail->insert($this->input->post('jumlah_stok_buku'));
       redirect(base_url().'Bibliography');
+
     }
+
+    $data['kategori'] = $this->Model_kategori->get_data();
+
     $this->load->view('beranda/header');
     $this->load->view('beranda/navbar');
-    $this->load->view('bibliography/bibli');
+    $this->load->view('bibliography/bibli', $data);
     $this->load->view('beranda/js');
 		}
+
   }
 
 

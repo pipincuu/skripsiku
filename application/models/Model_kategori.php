@@ -2,7 +2,7 @@
 
 class Model_kategori extends CI_Model {
 
-public function getData(){
+public function get_data(){
   $query = $this->db->get('kategori');
 
   return $query->result();
@@ -64,3 +64,5 @@ function delete($id){
 
 /* End of file Model_anggota.php */
 /* Location: ./application/models/Model_anggota.php */
+
+?>

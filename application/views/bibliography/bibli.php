@@ -44,7 +44,13 @@
 
                   <div class="form-group">
                     <label for="no_kategori">No Kategori</label>
-                    <input type="text" name="no_kategori"  class="form-control" id="no_kategori" placeholder="Masukkan No Kategori Buku">
+                    <!-- <input type="text" name="no_kategori"  class="form-control" id="no_kategori" placeholder="Masukkan No Kategori Buku"> -->
+                    <?php foreach ($kategori as $key) { ?>
+                      <select class="form-control" name="no_kategori">
+                        <option value="<?= $key->no_kategori ?>"><?= $key->no_kategori." (".$key->nama_kategori.")" ?></option>
+                      </select>
+                    <?php } ?>
+
                   </div>
                   <div class="form-group">
                     <label for="judul_buku">Judul Buku</label>

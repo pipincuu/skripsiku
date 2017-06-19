@@ -77,3 +77,5 @@ class Model_Bibli extends CI_Controller {
 
 /* End of file Model_Bibli.php */
 /* Location: ./application/controllers/Model_Bibli.php */
+
+?>
