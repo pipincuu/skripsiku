@@ -130,6 +130,9 @@
                   <a href="Anggota"><i class="fa fa-fw fa-user"></i> Membership</a>
               </li>
               <li>
+                  <a href="Keanggotaan"><i class="fa fa-fw fa-user"></i> Mahasiswa</a>
+              </li>
+              <li>
                   <a href="Kategori"><i class="fa fa-list-alt"></i>  Kategori</a>
               </li>
               <li>
