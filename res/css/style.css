@@ -1,11 +1,11 @@
 .navbar-default {
-    background-color: #303F9F;
-    border-color: #303F9F;
+    background-color: #4169E1;
+    border-color: #4169E1;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #FFF;
-    background-color: #3F51B5;
+    background-color: #4169E1;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -14,7 +14,7 @@
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
      color: #FFF;
-    background-color: #3F51B5;
+    background-color: #4169E1;
 }
 
 .navbar {

@@ -130,7 +130,7 @@
                   <a href="Anggota"><i class="fa fa-fw fa-user"></i> Membership</a>
               </li>
               <li>
-                  <a href="Keanggotaan"><i class="fa fa-fw fa-user"></i> Mahasiswa</a>
+                  <a href="Home"><i class="fa fa-fw fa-user"></i> Mahasiswa</a>
               </li>
               <li>
                   <a href="Kategori"><i class="fa fa-list-alt"></i>  Kategori</a>
@@ -148,7 +148,7 @@
                                 <a href="Sirkulasi/liat_sirkulasi">Data Peminjaman Buku</a>
                             </li>
                             <li>
-                                <a href="">Sejarah Peminjaman</a>
+                                <a href="Mahasiswa">Sejarah Peminjaman</a>
                             </li>
                         </ul>
                     </li>
