@@ -21,7 +21,9 @@ class Model_data extends CI_Model{
 
       'nim'    	           => $this->input->post('nim'),
       'nama_mahasiswa'  	 => $this->input->post('nama_mahasiswa'),
-      'program_studi'		   => $this->input->post('program_studi')
+      'program_studi'		   => $this->input->post('program_studi'),
+      'jk'                 => $this->input->post('jk'),
+      'tanggal_lahir'      => $this->input->post('tanggal_lahir')
 
     );
     $this->db->insert('mahasiswa', $insert);
@@ -50,7 +52,9 @@ class Model_data extends CI_Model{
     $object = array(
       // 'id_gedung' 		=> $this->input->post('id_gedung'),
       'nama_mahasiswa' 		=> $this->input->post('nama_mahasiswa'),
-      'program_studi' 		=> $this->input->post('program_studi')
+      'program_studi' 		=> $this->input->post('program_studi'),
+      'jk'                 => $this->input->post('jk'),
+      'tanggal_lahir'      => $this->input->post('tanggal_lahir')
 
     );
     $this->db->where('nim', $id);

@@ -51,4 +51,11 @@ class Data extends CI_Controller{
     $this->Model_data->delete($id);
     redirect(base_url().'Data');
   }
+
+  function beranda(){
+    $this->load->view('head');
+    $this->load->view('navbar');
+    $this->load->view('home');
+    $this->load->view('js');
+  }
 }
