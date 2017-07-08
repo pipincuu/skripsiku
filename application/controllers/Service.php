@@ -6,6 +6,7 @@ class Service extends CI_Controller{
   public function __construct(){
     parent::__construct();
     $this->load->model('Model_data');
+    $this->load->model('Model_login');
   }
 
   public function get(){
@@ -17,6 +18,20 @@ class Service extends CI_Controller{
     ->set_status_header(200) //header untuk service
     ->set_content_type('application/json', 'utf-8') //tipe dari data=>pake JSON
     ->set_output(json_encode($data, JSON_PRETTY_PRINT)) //hasil yang ditampilkan menggunakan json_encode dalam bentuk tampilan cantik
+    ->_display();
+    exit;
+  }
+
+  public function login(){
+    $data = (array)json_decode(file_get_contents('php://input'));
+    $login = $this->Model_login->service_login($data);
+
+    // json_decode(json_encode($data), true);
+
+    $this->output
+    ->set_status_header(200) //header untuk service
+    ->set_content_type('application/json', 'utf-8') //tipe dari data=>pake JSON
+    ->set_output(json_encode($login, JSON_PRETTY_PRINT)) //hasil yang ditampilkan menggunakan json_encode dalam bentuk tampilan cantik
     ->_display();
     exit;
   }
