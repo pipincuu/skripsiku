@@ -54,21 +54,6 @@ class Model_login extends CI_Model {
     }
   }
 
-  // ===========================================================================
-  // SERVICE
-  // ===========================================================================
-  public function service_login($data){
-    $username = $data['username'];
-    $password = $data['password'];
-
-    $data = $this->db->get_where('mahasiswa', array('nim' =>$username, 'jk' =>$password));
-
-    if(count($data)>=1){
-      return $data->first_row();
-    }else{
-      return NULL;
-    }
-  }
 }
 
 

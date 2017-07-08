@@ -65,4 +65,37 @@ class Model_data extends CI_Model{
     $this->db->where('nim', $id);
     $this->db->delete('mahasiswa');
   }
+
+  // ===========================================================================
+  // SERVICE
+  // ===========================================================================
+  public function service_login($data){
+    $username = $data['username'];
+    $password = $data['password'];
+
+    $tahun      = substr($password, 0,4);
+    $bulan      = substr($password, 4,2);
+    $tanggal    = substr($password, 6,2);
+    $tgl        = $tahun."-".$bulan."-".$tanggal;
+
+    $inisial_1  = substr($password, 8,1);
+    $inisial_2  = strtolower(substr($password, 9,1));
+    $nama_depan = $inisial_1.$inisial_2;
+
+    // return $nama_depan;
+
+    $this->db->select('*');
+    $this->db->from('mahasiswa');
+    $this->db->where('tgl_lahir', $tgl);
+    $this->db->like('nama_mahasiswa', $nama_depan, 'after');
+    $this->db->where('nim', $username);
+    $data = $this->db->get();
+    // $data = $this->db->get_where('mahasiswa', array('nim' =>$username, 'jk' =>$password));
+
+    if(count($data)>=1){
+      return $data->first_row();
+    }else{
+      return NULL;
+    }
+  }
 }

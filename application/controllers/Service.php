@@ -6,12 +6,14 @@ class Service extends CI_Controller{
   public function __construct(){
     parent::__construct();
     $this->load->model('Model_data');
-    $this->load->model('Model_login');
+    // $this->load->model('Model_login');
   }
 
   public function get(){
     // variabel untuk menampung data dari database
     $data = $this->Model_data->getData();
+
+    // print_r($data);
 
     // ini untuk menghasilkan json
     $this->output
@@ -24,7 +26,7 @@ class Service extends CI_Controller{
 
   public function login(){
     $data = (array)json_decode(file_get_contents('php://input'));
-    $login = $this->Model_login->service_login($data);
+    $login = $this->Model_data->service_login($data);
 
     // json_decode(json_encode($data), true);
 

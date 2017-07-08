@@ -8,12 +8,11 @@ class Login extends CI_Controller {
     $this->load->model('Model_login');
   }
 
-  public function index()
-  {
-
+  public function index(){
+    $this->load->view('login');
   }
 
-  public function login(){
+  public function proses_login(){
     $log = $this->Model_login->login();
 
     if($log){
@@ -28,13 +27,13 @@ class Login extends CI_Controller {
     }
     else {
       $this->session->set_flashdata('username atau password salah');
-      redirect('welcome/index');
+      redirect('Beranda');
     }
   }
 
   public function logout(){
     $this->session->sess_destroy();
-    redirect(base_url().'welcome');
+    redirect(base_url().'login');
   }
 }
 
