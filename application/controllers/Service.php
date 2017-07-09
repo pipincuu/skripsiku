@@ -25,7 +25,11 @@ class Service extends CI_Controller{
   }
 
   public function login(){
-    $data = (array)json_decode(file_get_contents('php://input'));
+    // $data = (array)json_decode(file_get_contents('php://input'));
+    $data = array(
+      'username'=>$this->input->post('username'),
+      'password'=>$this->input->post('password'),
+    );
     $login = $this->Model_data->service_login($data);
 
     // json_decode(json_encode($data), true);
