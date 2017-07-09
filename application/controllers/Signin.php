@@ -38,6 +38,7 @@ class Signin extends CI_Controller {
 
     $this->session->set_userdata($array);
 
+    redirect('Mahasiswa', 'refresh');
   }
 }
 
