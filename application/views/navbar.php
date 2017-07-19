@@ -32,13 +32,18 @@
                     </div>
                 </li> -->
                 <li>
+                  <a href="<?= base_url('HalamanUtama') ?>" class=" waves-effect arrow-r">
+                    <i class="fa fa-user-circle-o"></i> Data Mahasiswa
+                  </a>
+                </li>
+                <li>
                   <a href="<?= base_url('bebas-tanggungan') ?>" class=" waves-effect arrow-r">
-                    <i class="fa fa-user-circle-o"></i> Data Bebas Tanggungan
+                    <i class="fa fa-check-square"></i> Data Bebas Tanggungan
                   </a>
                 </li>
                 <li>
                   <a href="" class=" waves-effect arrow-r">
-                    <i class="fa fa-user-circle-o"></i> Data Admin
+                    <i class="fa fa-user"></i> Data Admin
                   </a>
                 </li>
             </ul>

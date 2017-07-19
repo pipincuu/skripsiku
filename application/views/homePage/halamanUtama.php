@@ -44,7 +44,7 @@
 								Perpustakaan 1
 							</div> -->
 						</p>
-						<ul class="">
+						<!-- <ul class="">
 							<li class="list-group-item">
 								<span class="tag bg-success label-pill float-xs-right">
 									<i class="fa fa-check"></i>
@@ -60,9 +60,9 @@
 									<i class="fa fa-question"></i>
 								</span> Perpustakaan
 							</li>
-						</ul>
+						</ul> -->
 
-						<button type="button" class="btn btn-default" name="button">Lihat Detail</button>
+						<a href="<?= base_url('Mahasiswa/detail/') ?>{{ mhs.nim }}" class="btn btn-default">Lihat Detail</a>
 					</div>
 
 				</div>
