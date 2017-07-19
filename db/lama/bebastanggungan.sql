@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.12
+-- version 4.1.6
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 19 Jul 2017 pada 03.19
--- Versi Server: 5.6.16
--- PHP Version: 5.5.11
+-- Generation Time: Mar 21, 2017 at 09:13 AM
+-- Server version: 5.6.16
+-- PHP Version: 5.5.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `admin`
+-- Table structure for table `admin`
 --
 
 CREATE TABLE IF NOT EXISTS `admin` (
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data untuk tabel `admin`
+-- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`id_admin`, `nama`, `username`, `password`, `alamat`, `notelepon`) VALUES
@@ -47,7 +47,7 @@ INSERT INTO `admin` (`id_admin`, `nama`, `username`, `password`, `alamat`, `note
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `bebastanggungan_mhs`
+-- Table structure for table `bebastanggungan_mhs`
 --
 
 CREATE TABLE IF NOT EXISTS `bebastanggungan_mhs` (
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `bebastanggungan_mhs` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `jenis_bebas_tanggungan`
+-- Table structure for table `jenis_bebas_tanggungan`
 --
 
 CREATE TABLE IF NOT EXISTS `jenis_bebas_tanggungan` (
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `jenis_bebas_tanggungan` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `list_bebas_tanggungan`
+-- Table structure for table `list_bebas_tanggungan`
 --
 
 CREATE TABLE IF NOT EXISTS `list_bebas_tanggungan` (

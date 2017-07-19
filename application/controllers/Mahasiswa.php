@@ -35,7 +35,7 @@ class Mahasiswa extends CI_Controller{
     $data['body'] = "body-normal";
     $data['perpus'] = $data_perpus;
     $data['kemahasiswaan'] = "";
-    $data['status_perpus'] = $status;
+    $data['status_perpus'] = $status
 
     // echo $status;
     $this->load->view('template', $data);
