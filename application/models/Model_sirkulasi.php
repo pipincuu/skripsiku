@@ -61,6 +61,34 @@ class Model_sirkulasi extends CI_Model {
     return $hasil->result();
   }
 
+  public function detail_sirkulasi($id){
+    $this->db->join('bibliography', 'bibliography.id_buku = sirkulasi_detail.id_buku');
+    $this->db->from('sirkulasi_detail');
+    $this->db->where('sirkulasi_detail.id_sirkulasi', $id);
+    $data = $this->db->get();
+
+    return $data->result();
+  }
+
+  function kembalikan($id){
+    $object = array(
+      'tanggal_dikembalikan'	=> date("Y-m-d"),
+      'status_peminjaman'     => 'lunas'
+    );
+
+    $this->db->where('id_pinjam', $id);
+    $this->db->update('sirkulasi', $object);
+  }
+
+  function perpanjang($id){
+    $object = array(
+      'tanggal_pinjam'	=> date("Y-m-d")
+    );
+
+    $this->db->where('id_pinjam', $id);
+    $this->db->update('sirkulasi', $object);
+  }
+
   function update_sirkulasi($id){
     $object = array(
       'nim'                   => $this->input->post('nim'),

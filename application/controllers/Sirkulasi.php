@@ -7,7 +7,8 @@ class Sirkulasi extends CI_Controller {
   public function __construct()
   {
     parent::__construct();
-    $this->API="http://localhost/skripsiku-kemahasiswaan";
+    // $this->API="http://localhost/skripsiku-kemahasiswaan";
+    $this->API="http://localhost/kemahasiswaan"; //ganti sama link punyamu donk
     $this->load->model('Model_sirkulasi');
   }
 
@@ -42,6 +43,29 @@ class Sirkulasi extends CI_Controller {
     $this->load->view('beranda/navbar');
     $this->load->view('peminjaman/daftar_peminjaman', $data);
     $this->load->view('js');
+    $this->load->view('beranda/js');
+  }
+
+  public function konfirmasi($id){
+
+    $data['id'] = $id;
+    $data['detail'] = $this->Model_sirkulasi->detail_sirkulasi($id);
+
+    // print_r($data);
+
+    $this->load->view('beranda/header');
+    $this->load->view('beranda/navbar');
+    $this->load->view('peminjaman/konfirmasi_peminjaman', $data);
+  }
+
+  public function kembalikan($id){
+    $this->Model_sirkulasi->kembalikan($id);
+    redirect('Sirkulasi/liat_sirkulasi', 'refresh');
+  }
+
+  public function perpanjang($id){
+    $this->Model_sirkulasi->perpanjang($id);
+    redirect('Sirkulasi/liat_sirkulasi', 'refresh');
   }
 
   // public function tambah_data_sirkulasi(){

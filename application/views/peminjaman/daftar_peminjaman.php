@@ -26,10 +26,9 @@
 									<tr>
 										<th>Id Peminjaman</th>
 										<th>Nim</th>
-										<th>Id Buku</th>
-										<!-- <th>Id Detail Buku</th> -->
 										<th>Tanggal Pinjam</th>
 										<th>Tanggal Kembali</th>
+										<th>Status peminjaman</th>
 										<th>Action</th>
 									</tr>
 								</thead>
@@ -40,12 +39,13 @@
 									<tr>
 										<td><?php echo $key['id_pinjam'] ?></td>
 										<td><?php echo $key['nim'] ?></td>
-										<td><?php echo $key['id_buku'] ?></td>
 										<td><?php echo $key['tanggal_pinjam']; ?></td>
 										<td><?php echo $key['tanggal_kembali']; ?></td>
+										<td><?php echo $key['status_peminjaman']; ?></td>
 
 										<td class="text-center">
 											<div class="btn-group-vertical">
+												<a href="<?php echo base_url().'Sirkulasi/konfirmasi/'.$key['id_pinjam'] ?>" class="btn btn-success"><i class="fa fa-check"></i> </a>
 												<a href="<?php echo base_url().'Sirkulasi/ubah_sirkulasi/'.$key['id_pinjam'] ?>" class="btn btn-warning"><i class="fa fa-edit"></i> </a>
 												<a href="<?php echo base_url().'Sirkulasi/hapus_sirkulasi/'.$key['id_pinjam'] ?>" class="btn btn-danger"><i class="fa fa-times"></i> </a>
 											</div>

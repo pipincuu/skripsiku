@@ -18,6 +18,7 @@ class Bibliography extends CI_Controller {
     $this->load->view('beranda/navbar');
     $this->load->view('bibliography/daftar_bibli', $data);
     $this->load->view('js');
+    $this->load->view('beranda/js');
   }
 
 	function ubah_bibli($id){

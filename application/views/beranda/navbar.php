@@ -60,13 +60,7 @@
                                 <a href="Sirkulasi">Peminjaman Buku</a>
                             </li>
                             <li>
-                                <a href="#">Pengembalian Buku</a>
-                            </li>
-                            <li>
                                 <a href="Sirkulasi/liat_sirkulasi">Data Peminjaman Buku</a>
-                            </li>
-                            <li>
-                                <a href="Mahasiswa">Sejarah Peminjaman</a>
                             </li>
                         </ul>
                     </li>
