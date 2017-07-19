@@ -13,7 +13,7 @@ class Model_admin extends CI_Model{
     $username = $this->input->post('username');
     $password = $this->input->post('password');
 
-    $data = $this->db->get_where('admin', array('username'=>$username,'password'=>$password));
+    $data = $this->db->get_where('admin', array('username'=>$username));
 
     return $data->first_row();
   }

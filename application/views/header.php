@@ -4,7 +4,6 @@
 	<title>OPAC POLINEMA</title>
 
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>res/css/bootstrap.css">
-	<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>res/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>res/css/style.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>res/font-awesome/css/font-awesome.css">
 

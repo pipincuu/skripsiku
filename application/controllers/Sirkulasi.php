@@ -2,21 +2,36 @@
 
 class Sirkulasi extends CI_Controller {
 
+  var $API = "";
+
   public function __construct()
   {
     parent::__construct();
+    $this->API="http://localhost/skripsiku-kemahasiswaan";
     $this->load->model('Model_sirkulasi');
   }
 
   public function index()
   {
+
     $data['tampil'] = $this->Model_sirkulasi->tampil_sirkulasi();
     $data['id']     = $this->Model_sirkulasi->dpt_id();
+    $data['cart']   = $this->cart->contents();
+
+    $data_mahasiswa = $this->curl->simple_get($this->API.'/Service/get', $data);
+
+    $data['mhs']    = json_decode($data_mahasiswa, TRUE);
+
+    print_r($data['cart']);
+
+    // foreach ($mhs as $key => $value) {
+    //   echo $value['nama_mahasiswa']."<br>";
+    // }
 
     $this->load->view('beranda/header');
     $this->load->view('beranda/navbar');
     $this->load->view('peminjaman/pinjam', $data);
-    $this->load->view('js');
+    // $this->load->view('js');
   }
 
 
@@ -63,7 +78,21 @@ class Sirkulasi extends CI_Controller {
 		redirect(base_url().'Sirkulasi/liat_sirkulasi');
 	}
 
+// =============================================================================
+// SERVICE
+// =============================================================================
 
+public function data_mhs($nim){
+  $data = $this->Model_sirkulasi->data_mhs($nim);
+
+  // ini untuk menghasilkan json
+    $this->output
+    ->set_status_header(200) //header untuk service
+    ->set_content_type('application/json', 'utf-8') //tipe dari data=>pake JSON
+    ->set_output(json_encode($data, JSON_PRETTY_PRINT)) //hasil yang ditampilkan menggunakan json_encode dalam bentuk tampilan cantik
+    ->_display();
+    exit;
+}
 
 }
 

@@ -16,15 +16,23 @@ class Admin extends CI_Controller{
   public function login(){
     $log = $this->Model_admin->login();
 
-    // print_r($log);
+    print_r($log);
 
     $array = array(
       'username' => $log->username,
       'id'       => $log->id_admin
     );
 
+    // print_r($array);
+
     $this->session->set_userdata($array);
     redirect('Dashboard', 'refresh');
+  }
+
+  public function logout()
+  {
+    $this->session->sess_destroy();
+    redirect(base_url(), 'refresh');
   }
 
 }

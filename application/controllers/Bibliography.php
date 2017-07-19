@@ -9,7 +9,6 @@ class Bibliography extends CI_Controller {
     $this->load->model('Model_detail');
   }
 
-
   public function index()
   {
     $data['tampil']	= $this->Model_bibli->tampil_bibli();
@@ -33,7 +32,6 @@ class Bibliography extends CI_Controller {
     $this->load->view('js');
     $this->load->view('bibliography/update_bibli', $data);
 	}
-
 
 	function hapus_bibli($id){
 		$this->Model_bibli->delete($id);
