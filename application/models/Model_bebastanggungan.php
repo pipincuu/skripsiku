@@ -13,18 +13,27 @@ class Model_bebastanggungan extends CI_Model {
 	function tambah_bebastanggungan(){
 
 		$insert = array (
-
-				'nim'    		=> $this->input->post('nim'),
-				'id_list'  		=> $this->input->post('id_list'),
-				'status'		=> $this->input->post('latitude')
+				'id_tanggungan' 		=> $this->input->post('id_tanggungan'),
+				'nim'    						=> $this->input->post('nim'),
+				'jenis_tanggungan' 	=> $this->input->post('jenis_tanggungan'),
+				'status'						=> "belum tuntas"
 
 			);
 		$this->db->insert('bebastanggungan_mhs', $insert);
 	}
 
+	public function list_tanggungan($nim){
+
+		$this->db->from('bebastanggungan_mhs');
+		$this->db->where('nim', $nim);
+		$tampil = $this->db->get();
+		
+		return $tampil->result();
+	}
+
 	function tampil_bebastanggungan(){
 		$tampil = $this->db->get('bebastanggungan_mhs');
-		return $tampil->result_array();
+		return $tampil->result();
 	}
 
 	function data_update_bebastanggungan($id){
@@ -34,18 +43,26 @@ class Model_bebastanggungan extends CI_Model {
 
 	function update($id){
 		$object = array(
-			// 'nim' 			=> $this->input->post('nim'), 
-			'id_list' 			=> $this->input->post('id_list'),
-			'status' 			=> $this->input->post('status')
+			// 'id_tanggungan' 		=> $this->input->post('id_tanggungan');
+			'nim'    						=> $this->input->post('nim'),
+			'jenis_tanggungan' 	=> $this->input->post('id_tanggungan'),
+			'status'						=> $this->input->post('latitude')
 
-			
 		);
-		$this->db->where('nim', $id);
+		$this->db->where('id_tanggungan', $id);
+		$this->db->update('bebastanggungan_mhs', $object);
+	}
+
+	function tuntas($id){
+		$object = array(
+			'status' => "tuntas"
+		);
+		$this->db->where('id_tanggungan', $id);
 		$this->db->update('bebastanggungan_mhs', $object);
 	}
 
 	function delete($id){
-		$this->db->where('nim', $id);
+		$this->db->where('id_tanggungan', $id);
 		$this->db->delete('bebastanggungan_mhs');
 	}
 
@@ -53,7 +70,7 @@ class Model_bebastanggungan extends CI_Model {
 	// 	$json = $this->db->get('gedung');
 	// 	return $json->result_array();
 
-	}
+	// }
 
 }
 

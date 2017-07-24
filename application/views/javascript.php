@@ -32,6 +32,15 @@ $('.rotate-btn').on('click', function () {
 	var cardId = $(this).attr('data-card');
 	$('#' + cardId).toggleClass('flipped');
 });
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+
+// Material Select Initialization
+ $(document).ready(function() {
+    $('.mdb-select').material_select();
+  });
 </script>
 
 <script>

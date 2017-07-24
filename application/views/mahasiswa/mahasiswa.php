@@ -21,8 +21,54 @@
   <div class="tab-content card">
     <!--Panel 1-->
     <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+
+      <?php
+        if($status_tanggungan=="belum tuntas"){
+          $class = "danger";
+        }else{
+          $class = "success";
+        }
+       ?>
+
+      <div class="text-xs-center center">
+        <a class="btn btn-<?= $class  ?> btn-rounded">
+          <i class="fa fa-warning white-text"></i> <?= $status_tanggungan ?>
+        </a>
+      </div>
+
       <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+
+      <table class="table">
+        <tr>
+          <thead>
+            <th>#</th>
+            <th>NIM</th>
+            <th>Jenis Tanggungan</th>
+            <th>status</th>
+          </thead>
+        </tr>
+
+        <?php $i=1; foreach ($kemahasiswaan as $key => $value) { ?>
+        <tr>
+          <tbody>
+            <td><?= $i ?></td>
+            <td><?= $value->nim ?></td>
+            <td><?= $value->jenis_tanggungan ?></td>
+            <td>
+              <?php
+                if($value->status=="belum lunas"){
+                  echo '<i class="fa fa-times-circle red-text fa-2x"></i>';
+                }else{
+                  echo '<i class="fa fa-check-circle green-text fa-2x"></i>';
+                }
+              ?>
+            </td>
+          </tbody>
+        </tr>
+        <?php $i++; } ?>
+
+      </table>
+
     </div>
     <!--/.Panel 1-->
 

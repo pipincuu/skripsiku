@@ -8,6 +8,7 @@ class Mahasiswa extends CI_Controller{
   public function __construct()
   {
     parent::__construct();
+    $this->load->model('Model_bebastanggungan');
     $this->API="http://localhost/skripsiku-perpus";
     //Codeigniter : Write Less Do More
   }
@@ -32,10 +33,20 @@ class Mahasiswa extends CI_Controller{
       }else{ $status="Tidak ada Tanggungan"; }
     }
 
+    $data_tanggungan = $this->Model_bebastanggungan->list_tanggungan($nim);
+
+    $status1 = "";
+    foreach ($data_tanggungan as $key => $value) {
+      if($value->status=="belum tuntas"){
+        $status1 = "belum tuntas";
+      }else{ $status1="tuntas"; }
+    }
+
     $data['body'] = "body-normal";
     $data['perpus'] = $data_perpus;
-    $data['kemahasiswaan'] = "";
-    $data['status_perpus'] = $status
+    $data['kemahasiswaan'] = $data_tanggungan;
+    $data['status_perpus'] = $status;
+    $data['status_tanggungan'] = $status1;
 
     // echo $status;
     $this->load->view('template', $data);
