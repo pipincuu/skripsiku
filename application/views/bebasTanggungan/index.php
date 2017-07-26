@@ -12,7 +12,7 @@
       <tr>
         <th>#</th>
         <th>NIM</th>
-        <th>Jenis Tanngungan</th>
+        <th>Jenis Tanggungan</th>
         <th>status</th>
         <th>opsi</th>
       </tr>
@@ -68,9 +68,9 @@
             <div class="md-form">
               <select name="jenis_tanggungan" class="mdb-select">
                 <option value="" disabled selected>Jenis Tanggungan</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="Gudang Dan Jurusan">Gudang Dan Jurusan</option>
+                <option value="Program Studi">Program Studi</option>
+                <option value="Perpustakaan">Perpustakaan</option>
               </select>
             </div>
 

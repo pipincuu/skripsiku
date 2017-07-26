@@ -11,7 +11,7 @@
 
   <ul class="nav nav-tabs tabs-2 red" role="tablist">
     <li class="nav-item">
-      <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">Jurusan/Prodi</a>
+      <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">Jurusan & Prodi</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">Perpustakaan</a>
@@ -56,7 +56,7 @@
             <td><?= $value->jenis_tanggungan ?></td>
             <td>
               <?php
-                if($value->status=="belum lunas"){
+                if($value->status=="belum tuntas"){
                   echo '<i class="fa fa-times-circle red-text fa-2x"></i>';
                 }else{
                   echo '<i class="fa fa-check-circle green-text fa-2x"></i>';

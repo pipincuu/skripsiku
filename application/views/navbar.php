@@ -42,7 +42,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="" class=" waves-effect arrow-r">
+                  <a href="<?= base_url('Form') ?>" class=" waves-effect arrow-r">
                     <i class="fa fa-user"></i> Data Admin
                   </a>
                 </li>
