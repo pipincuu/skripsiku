@@ -71,7 +71,7 @@ class cart extends CI_Controller{
   public function destroy(){
 
     $this->cart->destroy();
-    redirect(base_url().'halaman_utama');
+    redirect(base_url().'Sirkulasi');
 
   }
 

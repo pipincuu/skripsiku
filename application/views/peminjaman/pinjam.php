@@ -73,6 +73,12 @@
           </div>
         </div> -->
 
+        <div class="center text-center">
+          <a href="<?php echo base_url('Cart/destroy') ?>" class="btn btn-danger"><i class="fa fa-trash-o"></i> Hapus Cart</a>
+        </div>
+
+        <hr>
+
         <table class="table">
             <tr>
               <thead>

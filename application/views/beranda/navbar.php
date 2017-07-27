@@ -17,7 +17,7 @@
       <!-- Top Menu Items -->
       <ul class="nav navbar-right top-nav">
           <li>
-            <a href="<?= base_url('Cart/show') ?>">
+            <a href="<?= base_url('Sirkulasi') ?>">
               <i class="fa fa-shopping-cart"></i>
               <span class="badge">
                 <?= count($this->cart->contents()); ?>

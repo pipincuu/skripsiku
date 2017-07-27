@@ -7,9 +7,10 @@ class Sirkulasi extends CI_Controller {
   public function __construct()
   {
     parent::__construct();
-    // $this->API="http://localhost/skripsiku-kemahasiswaan";
-    $this->API="http://localhost/kemahasiswaan"; //ganti sama link punyamu donk
+    $this->API="http://localhost/skripsiku-kemahasiswaan";
+    // $this->API="http://localhost/kemahasiswaan"; //ganti sama link punyamu donk
     $this->load->model('Model_sirkulasi');
+    $this->load->model('Model_bibli');
   }
 
   public function index()
@@ -59,7 +60,17 @@ class Sirkulasi extends CI_Controller {
   }
 
   public function kembalikan($id){
+
+    $data = $this->Model_sirkulasi->detail_sirkulasi($id);
+
+    foreach ($data as $key => $value) {
+      $id_buku = $value->id_buku;
+      $count = $value->jumlah_stok_buku;
+
+      $tambah = $this->Model_bibli->tambah_stok($id_buku, $count);
+    }
     $this->Model_sirkulasi->kembalikan($id);
+
     redirect('Sirkulasi/liat_sirkulasi', 'refresh');
   }
 

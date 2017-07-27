@@ -73,9 +73,30 @@ class Model_Bibli extends CI_Controller {
 		$this->db->delete('bibliography');
 	}
 
-}
+  function kurang_stok($id, $count){
+    $kurang = $count-1;
+    $object = array(
+      'jumlah_stok_buku'	 => $kurang,
+    );
+
+    $this->db->where('id_buku', $id);
+    $this->db->update('bibliography', $object);
+
+    return $kurang;
+  }
+
+  function tambah_stok($id, $count){
+    $tambah = $count+1;
+    $object = array(
+      'jumlah_stok_buku'	 => $tambah,
+    );
+
+    $this->db->where('id_buku', $id);
+    $this->db->update('bibliography', $object);
+  }
 
 /* End of file Model_Bibli.php */
 /* Location: ./application/controllers/Model_Bibli.php */
+}
 
 ?>
