@@ -8,7 +8,7 @@ class Signin extends CI_Controller {
     parent::__construct();
 
     // set API
-    $this->API="http://localhost/skripsiku-kemahasiswaan";
+    $this->API="http://localhost/kemahasiswaan";
 
     $this->load->model('Model_data');
     // $this->load->model('Model_login');
@@ -20,26 +20,25 @@ class Signin extends CI_Controller {
   }
 
   public function proses_login(){
+      $data = array(
+        'username'=>$this->input->post('username'),
+        'password'=>$this->input->post('password'),
+      );
 
-    $data = array(
-      'username'=>$this->input->post('username'),
-      'password'=>$this->input->post('password'),
-    );
+      //send POST to service
+      $insert = $this->curl->simple_post($this->API.'/Service/login', $data, array(CURLOPT_BUFFERSIZE => 10));
+      $convert = json_decode($insert);
 
-    //send POST to service
-    $insert = $this->curl->simple_post($this->API.'/Service/login', $data, array(CURLOPT_BUFFERSIZE => 10));
-    $convert = json_decode($insert);
+      //set session
+      $array = array(
+        'nim'   => $convert->nim,
+        'nama'  => $convert->nama_mahasiswa,
+      );
 
-    //set session
-    $array = array(
-      'nim'   => $convert->nim,
-      'nama'  => $convert->nama_mahasiswa,
-    );
+      $this->session->set_userdata($array);
 
-    $this->session->set_userdata($array);
-
-    redirect('Mahasiswa', 'refresh');
-  }
+      redirect('Mahasiswa', 'refresh');
+    }
 }
 
 /* End of file Signin.php */

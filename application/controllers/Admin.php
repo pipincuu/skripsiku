@@ -18,15 +18,22 @@ class Admin extends CI_Controller{
 
     print_r($log);
 
-    $array = array(
-      'username' => $log->username,
-      'id'       => $log->id_admin
-    );
+    if(count($log)>=1){
+      $array = array(
+        'username' => $log->username,
+        'id'       => $log->id_admin
+      );
 
-    // print_r($array);
+      // print_r($array);
 
-    $this->session->set_userdata($array);
-    redirect('Dashboard', 'refresh');
+      $this->session->set_userdata($array);
+      redirect('Dashboard', 'refresh');
+    }else{
+
+      redirect(base_url(), 'refresh');
+    }
+
+
   }
 
   public function logout()
