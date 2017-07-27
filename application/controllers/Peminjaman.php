@@ -21,6 +21,8 @@ class Peminjaman extends CI_Controller {
 
       $data = $this->cart->contents();
 
+      print_r($data);
+
       foreach ($data as $key => $value) {
         $bli    = $this->Model_bibli->data_update_bibli($value['id']);
         $count  = $bli['jumlah_stok_buku'];
@@ -28,17 +30,10 @@ class Peminjaman extends CI_Controller {
         $kurang_stok = $this->Model_bibli->kurang_stok($value['id'], $count);
       }
 
-      $this->cart->destroy();
+      // $this->cart->destroy();
 
+			redirect(base_url().'Cart/destroy');
 
-			redirect(base_url().'Sirkulasi/liat_sirkulasi');
-
-
-		// }
-    // $this->load->view('beranda/header');
-    // $this->load->view('beranda/navbar');
-    // $this->load->view('peminjaman/pinjam');
-    // $this->load->view('js');
   }
 
 
