@@ -9,7 +9,8 @@ class Mahasiswa extends CI_Controller{
   {
     parent::__construct();
     $this->load->model('Model_bebastanggungan');
-    $this->API="http://localhost/perpustakaan";
+    $this->API="http://localhost/skripsiku-perpus";
+    // $this->API="http://localhost/perpustakaan";
     //Codeigniter : Write Less Do More
   }
 

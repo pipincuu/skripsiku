@@ -9,12 +9,12 @@
 </h3>
  <hr>
  <h4 class="text-left">
- <pre> NAMA 	:	</pre>
- <pre> NIM	:   </pre>
- <pre> PRODI 	:	</pre>
+ <pre> NAMA 	:	<?= $mhs->nama_mahasiswa ?></pre>
+ <pre> NIM	:  <?= $mhs->nim ?> </pre>
+ <pre> PRODI 	: <?= $mhs->program_studi ?>	</pre>
  </h4>
 
-  <table class="tg" align="">
+  <table class="tg" align="" border="2">
 	<colgroup>
 	<col style="width: 44px">
 	<col style="width: 240px">
@@ -34,33 +34,33 @@
   <tr>
     <td class="tg-y2tu" rowspan="2">ALAT DAN BHP<br><br></td>
     <td class="tg-yw4l">Kerusakan Komponen/Alat</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"><?= $data_tanggungan[0]->status ?></td>
   </tr>
   <tr>
     <td class="tg-yw4l">Peminjaman Komponen/Alat</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"><?= $data_tanggungan[1]->status ?></td>
   </tr>
   <tr>
     <td class="tg-y2tu" rowspan="2">TUGAS AKHIR</td>
     <td class="tg-yw4l">Distribusi CD Lap. Akhir</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"><?= $data_tanggungan[2]->status ?></td>
   </tr>
   <tr>
     <td class="tg-yw4l">Buku Petunjuk Operasional</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"><?= $data_tanggungan[3]->status ?></td>
   </tr>
   <tr>
     <td class="tg-yw4l" colspan="2">Penyerahan Alat/Buku Sumbangan</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"><?= $data_tanggungan[4]->status ?></td>
   </tr>
   <tr>
     <td class="tg-y2tu" rowspan="2">TATA TERTIB</td>
     <td class="tg-yw4l">Tanggungan Tatib</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"><?= $data_tanggungan[5]->status ?></td>
   </tr>
   <tr>
     <td class="tg-yw4l">Buku Tata Tertib</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"><?= $data_tanggungan[6]->status ?></td>
   </tr>
   <tr>
     <td class="tg-yw4l" rowspan="6">2.</td>
@@ -70,24 +70,24 @@
   <tr>
     <td class="tg-y2tu" rowspan="4">ADMINISTRASI PRODI</td>
     <td class="tg-yw4l">Distribusi Buku Lapangan Akhir</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"><?= $data_tanggungan[7]->status ?></td>
   </tr>
   <tr>
     <td class="tg-yw4l">Distribusi Laporan PKL</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"><?= $data_tanggungan[8]->status ?></td>
   </tr>
   <tr>
     <td class="tg-yw4l">Kompensasi</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"><?= $data_tanggungan[9]->status ?></td>
   </tr>
   <tr>
     <td class="tg-yw4l">KTM</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"><?= $data_tanggungan[10]->status ?></td>
   </tr>
   <tr>
     <td class="tg-y2tu">PUBLIKASI TUGAS AKHIR</td>
     <td class="tg-yw4l">Publikasi Seminar/Jurnal/Poster</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"><?= $data_tanggungan[11]->status ?></td>
   </tr>
   <tr>
     <td class="tg-yw4l" rowspan="3">3.</td>
@@ -96,12 +96,9 @@
   </tr>
   <tr>
     <td class="tg-yw4l" colspan="2">Peminjaman Buku</td>
-    <td class="tg-yw4l"></td>
+    <td class="tg-yw4l"><?= $status_perpus ?></td>
   </tr>
-  <tr>
-    <td class="tg-yw4l" colspan="2">Distribusi Buku Laporan Akhir</td>
-    <td class="tg-yw4l"></td>
-  </tr>
+  
 </table>
 <h5 class = "h5 responsive">
 <br>Malang, ............ </br>
@@ -111,3 +108,8 @@
 </h5>
 </body>
 </html>
+
+<!-- <tr>
+    <td class="tg-yw4l" colspan="2">Distribusi Buku Laporan Akhir</td>
+    <td class="tg-yw4l"></td>
+  </tr> -->
