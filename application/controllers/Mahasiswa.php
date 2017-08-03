@@ -43,6 +43,7 @@ class Mahasiswa extends CI_Controller{
       }else{ $status1="tuntas"; }
     }
 
+    $data['nim'] = $nim;
     $data['body'] = "body-normal";
     $data['perpus'] = $data_perpus;
     $data['kemahasiswaan'] = $data_tanggungan;

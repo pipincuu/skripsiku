@@ -2,9 +2,11 @@
   <!-- Nav tabs -->
 
   <div class="text-xs-center center">
-    <button type="button" class="btn btn-default">
+    <iframe src="<?= base_url('Form/index/'.$nim) ?>" style="width:0;height:0;border:0; border:none;" name="frame"></iframe>
+
+    <a onclick="frames['frame'].print()" class="btn btn-default">
       Buat form bebas tanggungan
-    </button>
+    </a>
   </div>
 
   <hr>

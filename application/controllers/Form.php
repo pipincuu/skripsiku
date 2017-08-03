@@ -23,7 +23,7 @@ class Form extends CI_Controller {
     $data_perpus  = json_decode($service);
     $data_mhs     = json_decode($service2);
 
-    print_r($data_mhs);
+    // print_r($data_mhs);
 
     // memasang status apakah mahasiswa ada tanggungan
     $status = "";
