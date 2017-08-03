@@ -9,8 +9,10 @@ class Mahasiswa extends CI_Controller {
 
   public function index()
   {
-    $this->load->view('mahasiswa/menumhs');
+    $this->load->view('mahasiswa/header1');
+    $this->load->view('mahasiswa/navbar1');
     $this->load->view('mahasiswa/keanggotaan');
+    $this->load->view('beranda/js');
   }
 
 }

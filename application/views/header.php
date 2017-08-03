@@ -42,8 +42,8 @@
 			<li><a href="Home"><i class="fa fa-home"></i> Beranda</a></li>
 			<li><a href="Info"><i class="fa fa-info-circle"></i> Info</a></li>
 			<li><a href="Help"><i class="fa fa-question-circle"></i> Bantuan</a></li>
-			<li><a href="Keanggotaan"><i class="fa fa-users"></i> Area Anggota</a></li>
-			<li><a href="Dashboard"><i class="fa fa-lock"></i> Pustakawan</a></li>
+			<li><a href="Signin"><i class="fa fa-users"></i> Area Anggota</a></li>
+			<li><a href="Admin"><i class="fa fa-lock"></i> Pustakawan</a></li>
 		</ul>
 
 

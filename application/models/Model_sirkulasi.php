@@ -30,8 +30,8 @@ class Model_sirkulasi extends CI_Model {
       'nim'                   => $this->input->post('nim'),
       // 'id_buku'	              => $this->input->post('id_buku'),
       // 'id_detail_buku'        => $this->input->post('id_detail_buku'),
-      'tanggal_pinjam'	      => date('Y-m-d'),
-      'tanggal_kembali'	      => NULL,
+      'tanggal_pinjam'	      => date('Y-m-d', strtotime('now')),
+      'tanggal_kembali'	      => date('Y-m-d', strtotime('+1 week')),
       'tanggal_diperbarui'    => NULL,
       'tanggal_dikembalikan'	=> NULL,
       'status_peminjaman'     => "belum lunas"
@@ -82,7 +82,7 @@ class Model_sirkulasi extends CI_Model {
 
   function perpanjang($id){
     $object = array(
-      'tanggal_pinjam'	=> date("Y-m-d")
+      'tanggal_diperbarui'	=> date('Y-m-d', strtotime('+1 week'))
     );
 
     $this->db->where('id_pinjam', $id);
@@ -92,28 +92,18 @@ class Model_sirkulasi extends CI_Model {
   function update_sirkulasi($id){
     $object = array(
       'nim'                   => $this->input->post('nim'),
-      'id_buku'	              => $this->input->post('id_buku'),
-      'id_detail_buku'        => $this->input->post('id_detail_buku'),
+      // 'id_buku'	              => $this->input->post('id_buku'),
+      // 'id_detail_buku'        => $this->input->post('id_detail_buku'),
       'tanggal_pinjam'	      => $this->input->post('tanggal_pinjam'),
       'tanggal_kembali'	      => $this->input->post('tanggal_kembali'),
       'tanggal_diperbarui'    => $this->input->post('tanggal_diperbarui'),
       'tanggal_dikembalikan'	=> $this->input->post('tanggal_dikembalikan'),
+      'status_peminjaman'     => $this->input->post('status_peminjaman')
     );
 
     $this->db->where('id_pinjam', $id);
     $this->db->update('sirkulasi', $object);
   }
-
-  function hapus_data_sirkulasi($id){
-
-    $object = array(
-      'status_hapus' 			=> 1
-    );
-
-    $this->db->where('id_pinjam', $id);
-    $this->db->update('sirkulasi', $object);
-  }
-
 
   function hapus_sirkulasi($id){
     $this->db->where('id_pinjam', $id);

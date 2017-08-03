@@ -25,8 +25,8 @@
 								<thead>
 									<tr>
 										<th>Id Buku</th>
-										<th>No Kategori</th>
 										<th>Judul Buku</th>
+										<th>No Kategori</th>
 										<th>Pengarang Buku</th>
 										<th>Penerbit Buku</th>
 										<th>Tahun Terbit</th>
@@ -37,7 +37,6 @@
 										<th>Jenis Koleksi</th>
 										<th>No Registrasi</th>
 										<th>No Acc</th>
-										<th>Keterangan</th>
 										<th>Action</th>
 									</tr>
 								</thead>
@@ -47,8 +46,8 @@
 									<?php foreach($tampil as $key){ ?>
 									<tr>
 										<td><?php echo $key['id_buku']; ?></td>
-										<td><?php echo $key['no_kategori']; ?></td>
 										<td><?php echo $key['judul_buku']; ?></td>
+										<td><?php echo $key['no_kategori']; ?></td>
 										<td><?php echo $key['pengarang_buku']; ?></td>
 										<td><?php echo $key['penerbit_buku']; ?></td>
 										<td><?php echo $key['tahun_terbit']; ?></td>
@@ -59,7 +58,8 @@
 										<td><?php echo $key['jenis_koleksi_buku']; ?></td>
 										<td><?php echo $key['no_registrasi']; ?></td>
 										<td><?php echo $key['no_acc']; ?></td>
-										<td><?php echo $key['keterangan']; ?></td>
+
+
 
 										<td class="text-center">
 											<div class="btn-group-vertical">

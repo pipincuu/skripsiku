@@ -20,14 +20,17 @@ class Signin extends CI_Controller {
   }
 
   public function proses_login(){
-      $data = array(
-        'username'=>$this->input->post('username'),
-        'password'=>$this->input->post('password'),
-      );
+
+       $data = array(
+       'username'=>$this->input->post('username'),
+       'password'=>$this->input->post('password'),
+     );
 
       //send POST to service
       $insert = $this->curl->simple_post($this->API.'/Service/login', $data, array(CURLOPT_BUFFERSIZE => 10));
       $convert = json_decode($insert);
+
+      if(count($convert)>=1){
 
       //set session
       $array = array(
@@ -36,9 +39,19 @@ class Signin extends CI_Controller {
       );
 
       $this->session->set_userdata($array);
-
       redirect('Mahasiswa', 'refresh');
+    }else{
+
+      redirect('Signin', 'refresh');
     }
+    }
+
+    public function logout (){
+      $this->session->sess_destroy();
+      redirect(base_url(), 'refresh');
+    }
+
+
 }
 
 /* End of file Signin.php */

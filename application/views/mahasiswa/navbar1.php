@@ -12,23 +12,15 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand navbar-inverse navbar-brand" href="Dashboard"> <i class="fa fa-book"></i> Sistem Informasi Perpustakaan Pusat Politeknik Negeri Malang</a>
+          <a class="navbar-brand navbar-inverse navbar-brand" href="Mahasiswa"> <i class="fa fa-user-md"></i> Area Anggota UPT. Perpustakaan POLINEMA</a>
       </div>
       <!-- Top Menu Items -->
       <ul class="nav navbar-right top-nav">
-          <li>
-            <a href="<?= base_url('Sirkulasi') ?>">
-              <i class="fa fa-shopping-cart"></i>
-              <span class="badge">
-                <?= count($this->cart->contents()); ?>
-              </span>
-            </a>
-          </li>
           <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?= $this->session->userdata('username'); ?> <b class="caret"></b></a>
               <ul class="dropdown-menu">
                   <li>
-                      <a href="<?= base_url('Admin/logout') ?>"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                      <a href="<?= base_url('Signin/logout') ?>"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                   </li>
               </ul>
           </li>
@@ -39,28 +31,16 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
               <li>
-                  <a href="Dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                  <a href="Mahasiswa"><i class="fa fa-fw fa-dashboard"></i> Beranda</a>
               </li>
               <li>
-                  <a href="Bibliography"><i class="fa fa-fw fa-bookmark"></i> Bibliography</a>
-              </li>
-              <!-- <li>
-                  <a href="Anggota"><i class="fa fa-fw fa-user"></i> Membership</a>
-              </li> -->
-              <li>
-                  <a href="Home"><i class="fa fa-fw fa-user"></i> Mahasiswa</a>
-              </li>
-              <li>
-                  <a href="Kategori"><i class="fa fa-list-alt"></i>  Kategori</a>
-              </li>
-              <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-desktop"></i> Sirkulasi <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-desktop"></i> Data Mahasiswa <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="Sirkulasi">Peminjaman Buku</a>
+                                <a href="Datapinjam">Data Sirkulasi Peminjaman Buku</a>
                             </li>
                             <li>
-                                <a href="Sirkulasi/liat_sirkulasi">Data Peminjaman Buku</a>
+                                <a href="History">History Peminjaman</a>
                             </li>
                         </ul>
                     </li>

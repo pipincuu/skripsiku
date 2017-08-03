@@ -28,6 +28,8 @@
 										<th>Nim</th>
 										<th>Tanggal Pinjam</th>
 										<th>Tanggal Kembali</th>
+										<th>Tanggal Perpanjangan</th>
+										<th>Tanggal Dikembalikan</th>
 										<th>Status peminjaman</th>
 										<th>Action</th>
 									</tr>
@@ -41,13 +43,15 @@
 										<td><?php echo $key['nim'] ?></td>
 										<td><?php echo $key['tanggal_pinjam']; ?></td>
 										<td><?php echo $key['tanggal_kembali']; ?></td>
+										<td><?php echo $key['tanggal_diperbarui']; ?></td>
+										<td><?php echo $key['tanggal_dikembalikan']; ?> </td>
 										<td><?php echo $key['status_peminjaman']; ?></td>
 
 										<td class="text-center">
 											<div class="btn-group-vertical">
 												<a href="<?php echo base_url().'Sirkulasi/konfirmasi/'.$key['id_pinjam'] ?>" class="btn btn-success"><i class="fa fa-check"></i> </a>
 												<a href="<?php echo base_url().'Sirkulasi/ubah_sirkulasi/'.$key['id_pinjam'] ?>" class="btn btn-warning"><i class="fa fa-edit"></i> </a>
-												<a href="<?php echo base_url().'Sirkulasi/hapus_sirkulasi/'.$key['id_pinjam'] ?>" class="btn btn-danger"><i class="fa fa-times"></i> </a>
+												<a href="<?php echo base_url().'Sirkulasi/hapus_data_sirkulasi/'.$key['id_pinjam'] ?>" class="btn btn-danger"><i class="fa fa-times"></i> </a>
 											</div>
 										</td>
 									</tr>

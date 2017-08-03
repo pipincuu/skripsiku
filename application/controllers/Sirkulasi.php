@@ -7,10 +7,11 @@ class Sirkulasi extends CI_Controller {
   public function __construct()
   {
     parent::__construct();
-    $this->API="http://localhost/skripsiku-kemahasiswaan";
-    // $this->API="http://localhost/kemahasiswaan"; //ganti sama link punyamu donk
+    // $this->API="http://localhost/skripsiku-kemahasiswaan";
+    $this->API="http://localhost/kemahasiswaan"; //ganti sama link punyamu donk
     $this->load->model('Model_sirkulasi');
     $this->load->model('Model_bibli');
+    $this->load->model('Model_detail');
   }
 
   public function index()
@@ -127,6 +128,32 @@ public function data_mhs($nim){
     ->set_output(json_encode($data, JSON_PRETTY_PRINT)) //hasil yang ditampilkan menggunakan json_encode dalam bentuk tampilan cantik
     ->_display();
     exit;
+}
+
+// =============================================================================
+// CONTROLLER MENU
+// =============================================================================
+
+public function dashboard($data){
+
+  $data['buku'] = $this->Model_bibli->tampil_bibli();
+
+  $this->load->view('beranda/header');
+  $this->load->view('beranda/navbar');
+  $this->load->view('beranda/dashboard', $data);
+  // $this->load->view('js');
+  $this->load->view('beranda/js');
+}
+
+public function bibliography(){
+  $data['tampil']	= $this->Model_bibli->tampil_bibli();
+  // $data['query'] = $this->model_bibli->getData();
+
+  $this->load->view('beranda/header');
+  $this->load->view('beranda/navbar');
+  $this->load->view('bibliography/daftar_bibli', $data);
+  $this->load->view('js');
+  $this->load->view('beranda/js');
 }
 
 }

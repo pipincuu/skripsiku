@@ -9,14 +9,14 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Sirkulasi - Peminjaman Buku
+                            Sirkulasi
                         </h1>
                         <ol class="breadcrumb">
                             <li>
                                 <i class="fa fa-dashboard"></i>  <a href="Dashboard">Dashboard</a>
                             </li>
                             <li class="active">
-                                <i class="fa fa-edit"></i> Loan
+                                <i class="fa fa-edit"></i> Sirkulasi
                             </li>
                         </ol>
                     </div>
@@ -38,40 +38,53 @@
 
   						<div class="col-md-6">
   							<div class="form-group">
-                  <label for="nim">Nim</label>
-                <input type="text" name="nim" class="form-control" id="nim" value="<?php echo $hasil['nim'] ?>">
-				 			 	</select>
+  				    			<label for="nim">Nim</label>
+  				   				<input type="text" name="nim" class="form-control" id="nim" placeholder="Masukkan Nim Mahasiswa"
+                    value="<?= $hasil['nim'] ?>">
   				 			 </div>
 
-  				  			<div class="form-group">
-  				    			<label for="id_buku">ID Buku</label>
-  				    			<input type="text" name="id_buku"  class="form-control" id="id_buku" placeholder="Masukkan Id Buku"
-                    value="<?php echo $hasil['id_buku'] ?>">
-  				  			</div>
-  				  			<div class="form-group">
-  				    			<label for="id_detail_buku">Status Buku</label>
-  				   				<input type="text" name="id_detail_buku" class="form-control" id="id_detail_buku" placeholder="Masukkan Jurusan Mahasiswa"
-                    value="<?php echo $hasil['id_detail_buku'] ?>">
+  				 			 <div class="form-group">
+  				    			<label for="tanggal_lahir">Tanggal Peminjaman</label>
+  				   				<div class="form-group input-append date" id="tanggal_pinjam" data-date-format="yyyy-mm-dd" >
+  								  <input class="span2 form-control" name="tanggal_pinjam" size="3" type="text" value="<?= $hasil['tanggal_pinjam'] ?>">
+  								 <!--  <di class="add-on input-group-addon"><i class="fa fa-calendar"></i></span> -->
+  								</div>
   				 			 </div>
+
+                 <div class="form-group">
+                   <label for="tanggal_lahir">Tanggal Kembali</label>
+                   <div class="form-group input-append date" id="tanggal_kembali" data-date-format="yyyy-mm-dd" >
+                   <input class="span2 form-control" name="tanggal_kembali" size="3" type="text" value="<?= $hasil['tanggal_kembali'] ?>">
+                  <!--  <di class="add-on input-group-addon"><i class="fa fa-calendar"></i></span> -->
+                 </div>
+                </div>
+
+                 <div class="form-group">
+                   <label for="tanggal_diperbarui">Tanggal Perpanjangan</label>
+                   <div class="form-group input-append date" id="tanggal_diperbarui" data-date-format="yyyy-mm-dd" >
+                   <input class="span2 form-control" name="tanggal_diperbarui" size="3" type="text" value="<?= $hasil['tanggal_diperbarui'] ?>">
+                  <!--  <di class="add-on input-group-addon"><i class="fa fa-calendar"></i></span> -->
+                 </div>
+                </div>
+
+                 <div class="form-group">
+                   <label for="tanggal_dikembalikan">Tanggal Dikembalikan</label>
+                   <div class="form-group input-append date" id="tanggal_dikembalikan" data-date-format="yyyy-mm-dd" >
+                   <input class="span2 form-control" name="tanggal_dikembalikan" size="3" type="text" value="<?= $hasil['tanggal_dikembalikan'] ?>">
+                  <!--  <di class="add-on input-group-addon"><i class="fa fa-calendar"></i></span> -->
+                 </div>
+                </div>
+
+                <div class="form-group">
+  				    			<label for="status_peminjaman">Status Peminjaman</label>
+  				   				<input type="text" name="status_peminjaman" class="form-control" id="status_peminjaman" placeholder="Masukkan Status Peminjaman"
+                    value="<?= $hasil['status_peminjaman'] ?>">
+  				 			 </div>
+
+                 <input type="submit" class="btn btn-primary" name="submit" value="Save">
   				 		</div>
 
-              <div class="col-md-6">
-              <div class="form-group">
-                 <label for="tanggal_pinjam">Tanggal Pinjam</label>
-                 <div class="form-group input-append date" id="tanggal_pinjam" data-date-format="yyyy-mm-dd" >
-                 <input class="span2 form-control" name="tanggal_pinjam" size="3" type="text" value="<?php echo $hasil['tanggal_pinjam'] ?>">
-                <!--  <di class="add-on input-group-addon"><i class="fa fa-calendar"></i></span> -->
-                </div>
-              </div>
-              <div class="form-group">
-                 <label for="tanggal_kembali">Tanggal Kembali</label>
-                 <div class="form-group input-append date" id="tanggal_kembali" data-date-format="yyyy-mm-dd" >
-                 <input class="span2 form-control" name="tanggal_kembali" size="3" type="text" value="<?php echo $hasil['tanggal_kembali'] ?>">
-                <!--  <di class="add-on input-group-addon"><i class="fa fa-calendar"></i></span> -->
-               </div>
-              </div>
 
-  				 			 <input type="submit" class="btn btn-primary" name="submit" value="Save">
   						</div>
 
 

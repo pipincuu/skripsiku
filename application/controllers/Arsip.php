@@ -6,7 +6,7 @@ class Arsip extends CI_Controller {
   {
     parent::__construct();
     $this->load->model('Model_kategori');
-        $this->load->model('Model_detail');
+    $this->load->model('Model_detail');
     $this->load->model('Model_bibli');
 
   }
