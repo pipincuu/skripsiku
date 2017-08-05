@@ -13,6 +13,7 @@
                             <b>Area Anggota Perpustakaan</b>
                         </h1>
                       </div>
+                        
                         <ol class="breadcrumb">
                           <div class="text-center">
                             <h3>Selamat datang di area anggota perpustakaan, di area ini anggota perpustakaan
@@ -20,6 +21,31 @@
                               dilakukan oleh anggota. </h3>
                             </div>
                         </ol>
+
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>NIM</th>
+                                    <th>Tgl Pinjam</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                            <?php $i=1; foreach ($data_pinjam as $key) { ?>
+                                <tr>
+                                    <td><?= $i ?></td>
+                                    <td><?= $key->nim ?></td>
+                                    <td><?= $key->tanggal_pinjam ?></td>
+                                    <td><?= $key->status_peminjaman ?></td>
+                                </tr>
+                            <?php $i++; } ?>
+                            </tbody>
+
+                        </table>
+                        
+
                     </div>
                 </div>
                 <!-- /.row -->
