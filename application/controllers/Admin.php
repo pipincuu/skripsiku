@@ -11,6 +11,15 @@ class Admin extends CI_Controller{
 
   function index(){
 
+    $data['body']       = "body-normal";
+    $data['admin'] = $this->Model_admin->getAll();
+
+    $this->load->view('template',$data);
+    $this->load->view('navbar');
+    $this->load->view('admin/data_admin');
+    $this->load->view('javascript');
+    $this->load->view('DataTables');
+    
   }
 
   public function login(){
