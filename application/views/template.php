@@ -19,6 +19,8 @@
 
   <link rel="stylesheet" href="<?= base_url('mdb/css/style.css') ?>">
 
+  <link rel="stylesheet" href="<?= base_url('mdb/css/daterangepicker.css') ?>">
+
 </head>
 
 <body class="fixed-sn blue-skin <?= $body ?>">

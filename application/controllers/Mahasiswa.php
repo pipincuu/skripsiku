@@ -10,7 +10,6 @@ class Mahasiswa extends CI_Controller{
     parent::__construct();
     $this->load->model('Model_bebastanggungan');
     $this->API="http://localhost/skripsiku-perpus";
-    // $this->API="http://localhost/perpustakaan";
     //Codeigniter : Write Less Do More
   }
 
@@ -43,7 +42,6 @@ class Mahasiswa extends CI_Controller{
       }else{ $status1="tuntas"; }
     }
 
-    $data['nim'] = $nim;
     $data['body'] = "body-normal";
     $data['perpus'] = $data_perpus;
     $data['kemahasiswaan'] = $data_tanggungan;

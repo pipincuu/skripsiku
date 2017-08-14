@@ -9,7 +9,6 @@ class BebasTanggungan extends CI_Controller{
     parent::__construct();
     //Codeigniter : Write Less Do More
     $this->load->model('Model_bebastanggungan');
-    // $this->API = 'http://localhost/kemahasiswaan';
     $this->API = 'http://localhost/skripsiku-kemahasiswaan';
   }
 

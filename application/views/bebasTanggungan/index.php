@@ -12,7 +12,7 @@
       <tr>
         <th>#</th>
         <th>NIM</th>
-        <th>Jenis Tanggungan</th>
+        <th>Jenis Tanngungan</th>
         <th>status</th>
         <th>opsi</th>
       </tr>
@@ -67,23 +67,10 @@
 
             <div class="md-form">
               <select name="jenis_tanggungan" class="mdb-select">
-              <option value="" disabled selected>Jenis Tanggungan</option>
-                <optgroup label="Gudang dan Jurusan">
-                  <option value="Kerusakan Komponen/Alat">Kerusakan Komponen/Alat</option>
-                  <option value="Peminjaman Komponen/Alat">Peminjaman Komponen/Alat</option>
-                  <option value="Distribusi CD Lap. Akhir">Distribusi CD Lap. Akhir</option>
-                  <option value="Buku Petunjuk Operasional">Buku petunjuk operasional</option>
-                  <option value="Penyerahan Alat/Buku Sumbangan">Penyerahan Alat/Buku Sumbangan</option>
-                  <option value="Tanggungan Tatib">Tanggungan Tatib</option>
-                  <option value="Buku Tata Tertib">Buku Tata Tertib</option>
-                </optgroup>
-                <optgroup label="Program Studi">
-                  <option value="Distribusi Buku Lapangan Akhir">Distribusi Buku Laporan Akhir</option>
-                  <option value="Distribusi Laporan PKL">Distribusi Laporan PKL</option>
-                  <option value="Kompensasi">Kompensasi</option>
-                  <option value="KTM">KTM</option>
-                  <option value="Publikasi Tugas akhir">Publikasi Tugas akhir</option>
-                </optgroup>
+                <option value="" disabled selected>Jenis Tanggungan</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
               </select>
             </div>
 
